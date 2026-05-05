@@ -101,30 +101,80 @@
   .nav-links a:hover, .nav-links a.active { background:var(--p6); color:var(--p2) }
 
   /* ── HERO ── */
-  .hero { background:var(--cream); padding:88px 0 68px; position:relative; overflow:hidden }
-  .hero::before { content:''; position:absolute; top:-60px; right:-100px; width:520px; height:520px; background:radial-gradient(circle,rgba(123,84,184,0.10) 0%,transparent 70%); border-radius:50%; pointer-events:none }
-  .hero::after  { content:''; position:absolute; bottom:-40px; left:-60px; width:360px; height:360px; background:radial-gradient(circle,rgba(91,52,144,0.07) 0%,transparent 70%); border-radius:50%; pointer-events:none }
-  .hero-inner { max-width:1100px; margin:0 auto; padding:0 32px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center }
+  .hero {
+    background: linear-gradient(160deg, var(--p7) 0%, var(--cream) 60%);
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .hero::before {
+    content:''; position:absolute; top:-80px; right:-120px;
+    width:560px; height:560px;
+    background:radial-gradient(circle,rgba(123,84,184,0.09) 0%,transparent 70%);
+    border-radius:50%; pointer-events:none;
+  }
+  .hero::after {
+    content:''; position:absolute; bottom:-60px; left:-80px;
+    width:400px; height:400px;
+    background:radial-gradient(circle,rgba(61,31,106,0.06) 0%,transparent 70%);
+    border-radius:50%; pointer-events:none;
+  }
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+  }
   .hero-tag {
     display:inline-flex; align-items:center; gap:8px;
     background:var(--p6); color:var(--p2); border:1px solid var(--p5);
-    border-radius:20px; padding:6px 16px 6px 10px;
-    font-size:0.84rem; font-weight:500; margin-bottom:22px;
+    border-radius:20px; padding:6px 18px 6px 12px;
+    font-size:0.84rem; font-weight:500; margin-bottom:28px;
   }
   .hero-tag-dot { width:8px; height:8px; background:var(--p3); border-radius:50% }
-  .hero h1 { color:var(--text); margin-bottom:22px }
+  .hero h1 { color:var(--text); margin-bottom:24px; line-height:1.15 }
   .hero h1 em { font-style:italic; color:var(--p2) }
-  .hero > .hero-inner > div > p { font-size:1.05rem; color:var(--tmid); line-height:1.8; margin-bottom:32px; max-width:480px }
-  .hero-btns { display:flex; gap:12px; flex-wrap:wrap }
-  .hero-visual { display:grid; grid-template-columns:1fr 1fr; gap:14px }
-  .hero-card { background:#fff; border-radius:12px; padding:24px 22px; box-shadow:var(--sh); border:1px solid var(--border); transition:transform 0.2s }
-  .hero-card:hover { transform:translateY(-3px) }
-  .hero-card:nth-child(1) { border-top:3px solid var(--p1) }
-  .hero-card:nth-child(2) { border-top:3px solid var(--p3); margin-top:28px }
-  .hero-card:nth-child(3) { border-top:3px solid var(--p4) }
-  .hero-card:nth-child(4) { border-top:3px solid var(--p2); margin-top:-28px }
-  .hero-card h4 { font-family:'Jost',sans-serif; font-size:0.95rem; font-weight:600; color:var(--text); margin-bottom:6px }
-  .hero-card p  { font-family:'Jost',sans-serif; font-size:0.88rem; color:var(--tlt); line-height:1.55 }
+  .hero-lead {
+    font-size:1.15rem; color:var(--tmid); line-height:1.85;
+    margin-bottom:40px; max-width:600px; margin-left:auto; margin-right:auto;
+  }
+  .hero-btns { display:flex; gap:14px; flex-wrap:wrap; justify-content:center }
+
+  /* Warm help strip */
+  .help-strip {
+    background: var(--p6);
+    border-top: 1px solid var(--p5);
+    border-bottom: 1px solid var(--p5);
+    padding: 28px 0;
+  }
+  .help-strip-inner {
+    max-width:1100px; margin:0 auto; padding:0 32px;
+    display:flex; align-items:center; justify-content:center;
+    gap:16px; flex-wrap:wrap; text-align:center;
+  }
+  .help-strip p {
+    font-size:1rem; color:var(--p2); font-weight:500;
+  }
+  .help-strip span { color:var(--tlt); font-size:0.96rem }
+
+  /* How we help — clean flat grid replacing the cards */
+  .how-grid {
+    display:grid; grid-template-columns:repeat(4,1fr);
+    gap:0; margin-top:48px;
+    border:1px solid var(--border); border-radius:16px; overflow:hidden;
+    background:#fff; box-shadow:var(--sh);
+  }
+  .how-item {
+    padding:36px 28px;
+    border-right:1px solid var(--border);
+    transition:background 0.2s;
+  }
+  .how-item:last-child { border-right:none }
+  .how-item:hover { background:var(--p7) }
+  .how-icon { font-size:2rem; margin-bottom:16px; display:block }
+  .how-item h4 { font-size:1.15rem; color:var(--p2); margin-bottom:10px }
+  .how-item p  { font-size:0.94rem; color:var(--tmid); line-height:1.7 }
 
   /* ── STATS BAR ── */
   .stats-bar { background:var(--p1); color:#fff; padding:32px 0 }
@@ -323,23 +373,29 @@
 <div id="page-home" class="page active">
   <section class="hero">
     <div class="hero-inner">
-      <div>
-        <div class="hero-tag"><span class="hero-tag-dot"></span>Established under the Women Empowerment Act No. 37 of 2024</div>
-        <h1>Protecting and Promoting <em>Women's Rights</em> in Sri Lanka</h1>
-        <p>The National Commission on Women is an independent commission mandated to protect and promote the rights of all women in Sri Lanka — through inquiry, mediation, policy, and advocacy.</p>
-        <div class="hero-btns">
-          <a class="btn btn-dk" onclick="go('about')">Learn About the NCW →</a>
-          <a class="btn btn-ol" onclick="go('docs')">View Our Documents</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-card"><div style="font-size:1.6rem;margin-bottom:10px">⚖️</div><h4>Rights Protection</h4><p>Inquire into and investigate alleged violations of women's rights</p></div>
-        <div class="hero-card"><div style="font-size:1.6rem;margin-bottom:10px">🤝</div><h4>Mediation</h4><p>Resolve grievances through structured mediation processes</p></div>
-        <div class="hero-card"><div style="font-size:1.6rem;margin-bottom:10px">📋</div><h4>Policy</h4><p>Formulate the National Policy on women's empowerment</p></div>
-        <div class="hero-card"><div style="font-size:1.6rem;margin-bottom:10px">📢</div><h4>Advocacy</h4><p>Issue public statements and engage with State and civil society</p></div>
+      <div class="hero-tag"><span class="hero-tag-dot"></span>Established under the Women Empowerment Act No. 37 of 2024</div>
+      <h1>Protecting the Rights of <em>Every Woman</em> in Sri Lanka</h1>
+      <p class="hero-lead">The National Commission on Women is an independent commission established under the Women Empowerment Act No. 37 of 2024 — to protect, promote, and advance the rights of all women in Sri Lanka.</p>
+      <div class="hero-btns">
+        <a class="btn btn-dk" onclick="go('contact')">Contact the NCW</a>
+        <a class="btn btn-ol" onclick="go('about')">About the Commission</a>
       </div>
     </div>
   </section>
+
+  <div class="help-strip">
+    <div class="help-strip-inner">
+      <p>An independent commission — free from political interference, open to all women.</p>
+      <span>Established September 2025 · Women Empowerment Act No. 37 of 2024</span>
+    </div>
+  </div>
+
+  <div style="background:var(--p1);padding:48px 0;text-align:center">
+    <div class="container" style="max-width:820px">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);font-style:italic;color:#fff;line-height:1.6;margin-bottom:16px">"Every woman shall be entitled to women's rights and no woman shall be denied of such rights."</p>
+      <span style="font-size:0.84rem;color:var(--p5);letter-spacing:0.06em">Section 3 — Women Empowerment Act No. 37 of 2024</span>
+    </div>
+  </div>
 
   <div class="stats-bar">
     <div class="stats-inner">
@@ -350,6 +406,38 @@
       <div class="stat-item"><span class="number">CEDAW</span><span class="label">Convention Monitored</span></div>
     </div>
   </div>
+
+  <section class="section" style="background:#fff">
+    <div class="container">
+      <div style="text-align:center">
+        <span class="eyebrow">How We Can Help</span>
+        <h2>What the NCW Does For You</h2>
+        <p style="color:var(--tmid);font-size:1rem;margin-top:12px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.8">We are mandated by law to protect and promote the rights of every woman in Sri Lanka across four key areas.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-item">
+          <span class="how-icon">⚖️</span>
+          <h4>Rights Protection</h4>
+          <p>Inquire into and investigate alleged violations of women's rights across Sri Lanka.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-icon">🤝</span>
+          <h4>Mediation</h4>
+          <p>Help resolve grievances through fair, structured mediation between parties.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-icon">📋</span>
+          <h4>Policy</h4>
+          <p>Formulate the National Policy on the advancement and empowerment of women.</p>
+        </div>
+        <div class="how-item">
+          <span class="how-icon">📢</span>
+          <h4>Advocacy</h4>
+          <p>Issue public statements and engage with Government, civil society and the public.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section" style="background:#fff">
     <div class="container">
@@ -413,8 +501,8 @@
       <div class="about-stats">
         <div class="about-stat"><span class="num">7</span><span class="lbl">Independent Commissioners</span></div>
         <div class="about-stat"><span class="num">2024</span><span class="lbl">Act Certified July 2024</span></div>
-        <div class="about-stat"><span class="num">CEDAW</span><span class="lbl">International standards upheld</span></div>
-        <div class="about-stat"><span class="num">SDG 5</span><span class="lbl">Gender Equality Goal</span></div>
+        <div class="about-stat"><span class="num">CEDAW</span><span class="lbl">International Standards Upheld</span></div>
+        <div class="about-stat"><span class="num">4 yrs</span><span class="lbl">Commissioner Term of Office</span></div>
       </div>
     </div>
   </div>
@@ -428,8 +516,7 @@
         <div class="chip chip-nat" onclick="go('legal')"><span class="ci">📜</span><div class="ct"><div class="tt">Women Empowerment Act No. 37 of 2024</div><div class="ss">National · Establishes the NCW</div></div></div>
         <div class="chip chip-nat" onclick="go('legal')"><span class="ci">🛡️</span><div class="ct"><div class="tt">Prevention of Domestic Violence Act</div><div class="ss">National Law</div></div></div>
         <div class="chip chip-intl" onclick="go('legal')"><span class="ci">🌍</span><div class="ct"><div class="tt">CEDAW Convention</div><div class="ss">International · UN Treaty</div></div></div>
-        <div class="chip chip-intl" onclick="go('legal')"><span class="ci">🌐</span><div class="ct"><div class="tt">Beijing Platform for Action</div><div class="ss">International Framework</div></div></div>
-        <div class="chip chip-intl" onclick="go('legal')"><span class="ci">🎯</span><div class="ct"><div class="tt">Sustainable Development Goal 5</div><div class="ss">Gender Equality · UN 2030 Agenda</div></div></div>
+
         <div class="chip chip-nat" onclick="go('legal')"><span class="ci">📋</span><div class="ct"><div class="tt">National Policy on Women</div><div class="ss">National Policy Framework</div></div></div>
       </div>
     </div>
@@ -440,7 +527,7 @@
       <div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024 to protect and promote women's rights across Sri Lanka.</p></div>
       <div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Legal Instruments</a><a onclick="go('docs')">Documents</a><a onclick="go('contact')">Contact</a></div>
       <div class="footer-col"><h5>Documents</h5><a onclick="go('docs')">Statements</a><a onclick="go('docs')">Submissions</a><a onclick="go('docs')">Reports</a></div>
-      <div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a><a onclick="go('legal')">Beijing Platform</a><a onclick="go('legal')">SDG 5</a></div>
+      <div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a><a onclick="go('legal')">Domestic Violence Act</a></div>
     </div>
     <div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div>
   </footer>
@@ -462,20 +549,51 @@
         <div class="mandate-text">
           <span class="eyebrow">Our Mandate</span>
           <h2>Established to Protect and Promote Women's Rights</h2>
-          <p>The NCW is established under the Women Empowerment Act No. 37 of 2024, a significant milestone in the legislative advancement of women's rights protection in Sri Lanka. The seven Commissioners were appointed by H.E. the President Anura Kumara Dissanayake in September 2025, based on the recommendations of the Constitutional Council and the Women Parliamentarians' Caucus.</p>
-          <p>As an independent commission, the NCW has been mandated with wide powers to protect and promote women's rights — including the power to inquire into and investigate alleged violations, resolve grievances through mediation, and formulate a National Policy on the advancement and empowerment of women.</p>
-          <p>We acknowledge, with deep appreciation, that the Women Empowerment Act of 2024 and the NCW are the culmination of decades of struggle and perseverance by women's rights collectives and organisations islandwide.</p>
-          <h3>Our Key Functions</h3>
+          <p>The NCW is established under the Women Empowerment Act No. 37 of 2024 — a significant milestone in the legislative advancement of women's rights in Sri Lanka. The seven Commissioners were appointed by H.E. the President Anura Kumara Dissanayake in September 2025, based on the recommendations of the Constitutional Council and the Women Parliamentarians' Caucus.</p>
+          <p>As an independent entity, the Commission has oversight powers over the Ministry of Women and Child Affairs and the implementation of the Sri Lanka National Policy on Gender Equality and Women's Empowerment, approved by Cabinet and launched in March 2023.</p>
+          <p>The Women Empowerment Act sets out a foundational commitment that <em>"every woman shall be entitled to women's rights and no woman shall be denied of such rights"</em> (Section 3). The NCW is mandated to give full effect to this commitment.</p>
+
+          <h3>Objectives of the Women Empowerment Act</h3>
           <ul>
-            <li>Inquire into and investigate alleged violations of women's rights</li>
-            <li>Resolve grievances through mediation between parties</li>
-            <li>Formulate a National Policy on the advancement and empowerment of women</li>
-            <li>Conduct awareness programmes on women's rights and the WE Act</li>
-            <li>Undertake research and disseminate knowledge on women's rights</li>
-            <li>Make recommendations to Government on aligning domestic law with international standards</li>
-            <li>Assess the impact of proposed laws and policies on women's rights</li>
-            <li>Issue public statements on critical issues affecting women</li>
-            <li>Liaise with state institutions, non-state actors, and civil society</li>
+            <li>Introduce mechanisms to secure women's rights subject to the Constitution</li>
+            <li>Give effect to Sri Lanka's obligations under CEDAW and applicable laws</li>
+            <li>Formulate a national policy for the advancement and empowerment of women</li>
+            <li>Protect women from all forms of discrimination based on gender and sexual orientation</li>
+            <li>Prevent discrimination, marginalisation, sexual harassment, and violence against women</li>
+            <li>Make recommendations for law reforms to prevent discrimination and ensure empowerment</li>
+            <li>Promote women's participation in justice mechanisms and equal representation in decision-making</li>
+            <li>Ensure the economic empowerment of women, with special regard to women with disabilities</li>
+            <li>Conduct public education programmes on all aspects of women's empowerment</li>
+            <li>Promote revision of laws ensuring equal salaries for work of equal value</li>
+          </ul>
+
+          <h3>Powers of the Commission (Section 6)</h3>
+          <ul>
+            <li>Inquire into and investigate infringement or imminent infringement of women's rights</li>
+            <li>Intervene in court proceedings relating to women's rights with the permission of the Court</li>
+            <li>Conduct public inquiries and institute actions in any competent Court on its own</li>
+            <li>Refer women subject to discrimination for mediation, on its own motion or on complaint</li>
+            <li>Request information and reports from any person or institution</li>
+            <li>Liaise and interact with state institutions to foster common policies and promote co-operation in handling complaints</li>
+            <li>Monitor and evaluate adherence by private persons and non-state institutions to women's rights standards</li>
+            <li>Make recommendations to Government on aligning domestic law with international norms</li>
+            <li>Assess the impact of legislation, policies, and practices on women's rights</li>
+            <li>Formulate a National Policy and framework on the advancement and empowerment of women</li>
+            <li>Award compensation to aggrieved persons for expenses reasonably incurred in making a complaint</li>
+            <li>Open regional and provincial offices of the Commission across Sri Lanka</li>
+            <li>Conduct awareness programmes and undertake research on women's rights</li>
+            <li>Receive grants, gifts, and donations from local and foreign sources</li>
+          </ul>
+
+          <h3>Inquiry, Investigation and Enforcement (Part II)</h3>
+          <ul>
+            <li><strong>Supreme Court references:</strong> The Commission receives references from the Supreme Court on matters relating to women's rights arising under Article 126 of the Constitution, for inquiry and report (Section 17)</li>
+            <li><strong>Supreme Court determinations:</strong> The Commission may refer questions on the scope of women's rights to the Supreme Court for determination during any inquiry (Section 17(3))</li>
+            <li><strong>Own-motion investigations:</strong> The Commission may investigate any infringement of women's rights on its own initiative, without waiting for a complaint. Such investigations must be concluded within one month (Section 18)</li>
+            <li><strong>Complaints:</strong> Any aggrieved person, or someone acting on her behalf, may submit a complaint. The NCW must inform the complainant of action taken within 14 days of its decision (Section 19)</li>
+            <li><strong>Mediation:</strong> Disputes may be referred to a trained panel of mediators. Mediation must be concluded within 60 days (Section 20)</li>
+            <li><strong>Appeals:</strong> Any person who does not accept the Commission's decision may appeal to the Court of Appeal within one month (Section 26)</li>
+            <li><strong>Non-compliance:</strong> Any person who fails to comply with the Commission's recommendations or decisions is guilty of contempt of the Commission. The Commission may transmit a Certificate of such determination to the Supreme Court (Section 30)</li>
           </ul>
         </div>
         <div>
@@ -484,12 +602,17 @@
             <p>The NCW is established under the Women Empowerment Act No. 37 of 2024, certified on 2 July 2024 and published in the Gazette of the Democratic Socialist Republic of Sri Lanka.</p>
           </div>
           <div class="info-card p2bg">
-            <h4>Appointment</h4>
-            <p>Seven Commissioners were appointed in September 2025 by H.E. the President, on the recommendation of the Constitutional Council and the Women Parliamentarians' Caucus.</p>
+            <h4>Appointment of Commissioners</h4>
+            <p>Seven Commissioners were appointed in September 2025 by H.E. the President — five on the recommendation of the Constitutional Council (following a public nomination and interview process) and two on the recommendation of the Women Parliamentarians' Caucus. At least five members, including the Chairperson, must be women. Commissioners serve four-year terms commencing September 2025.</p>
+            <p style="margin-top:10px">Under Section 5(3), Commissioners must be persons of distinction in public life with proven knowledge and experience in law, legislation, trade unionism, management, administration, economic development, health, education, or women's empowerment.</p>
           </div>
           <div class="info-card p2bg">
-            <h4>Current Status</h4>
-            <p>The NCW is actively commencing its primary functions. Due to limited capacity, the inquiry and investigative functions are being progressively operationalised.</p>
+            <h4>The Ombuds</h4>
+            <p>The Act provides for the appointment of an Ombuds, empowered to receive complaints connected with gender-based violence or infringement of women's rights, and to forward her recommendations to the Commission.</p>
+          </div>
+          <div class="info-card p2bg">
+            <h4>National Fund for Women</h4>
+            <p>The Act establishes a National Fund for Women, administered by the Commission. The Fund receives parliamentary allocations and can accept donations and grants from local and foreign sources. It may be used to make ex-gratia payments to individuals in recognition of outstanding contributions to women's rights.</p>
           </div>
         </div>
       </div>
@@ -549,7 +672,7 @@
 
   <section class="section" style="background:#fff">
     <div class="container">
-      <div class="legal-group-hdr"><span style="font-size:1.8rem">🇱🇰</span><div><div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--p3);margin-bottom:4px">National Legislation</div><h2>Sri Lanka National Laws</h2></div></div>
+      <div class="legal-group-hdr"><span style="font-size:1.8rem">⚖️</span><div><div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--p3);margin-bottom:4px">National Legislation</div><h2>Sri Lanka National Laws</h2></div></div>
       <div class="we-act-hero">
         <span class="tag">Foundational Legislation</span>
         <h2>Women Empowerment Act No. 37 of 2024</h2>
@@ -575,20 +698,13 @@
 
   <section class="section" style="background:var(--p7)">
     <div class="container">
-      <div class="legal-group-hdr"><span style="font-size:1.8rem">🌍</span><div><div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--p3);margin-bottom:4px">International Frameworks</div><h2>International Instruments</h2></div></div>
+      <div class="legal-group-hdr"><span style="font-size:1.8rem">🌐</span><div><div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--p3);margin-bottom:4px">International Frameworks</div><h2>International Instruments</h2></div></div>
       <div class="legal-cards">
         <div class="legal-card">
           <div class="legal-card-top"><div class="lct">UN Treaty · Ratified by Sri Lanka</div><h3>CEDAW Convention</h3><p class="desc">The Convention on the Elimination of All Forms of Discrimination Against Women. Sri Lanka's ninth periodic report was reviewed by the UN CEDAW Committee in February 2025.</p></div>
           <div class="legal-card-foot"><a class="btn btn-sm btn-md" href="files/cedaw.pdf">📄 Download CEDAW</a><a class="btn btn-sm btn-ol" href="files/cedaw-concluding-obs-2025.pdf">Concluding Obs. 2025</a></div>
         </div>
-        <div class="legal-card">
-          <div class="legal-card-top"><div class="lct">UN Framework</div><h3>Beijing Platform for Action</h3><p class="desc">The comprehensive international framework for women's rights and gender equality, adopted at the Fourth World Conference on Women in 1995. A key reference for NCW policy work.</p></div>
-          <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">View Framework</a></div>
-        </div>
-        <div class="legal-card">
-          <div class="legal-card-top"><div class="lct">UN 2030 Agenda</div><h3>Sustainable Development Goal 5</h3><p class="desc">SDG 5 — Achieve gender equality and empower all women and girls — is a central reference for the NCW's mandate and the Government's commitments on women's rights.</p></div>
-          <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">Learn More</a></div>
-        </div>
+
         <div class="legal-card">
           <div class="legal-card-top"><div class="lct">Optional Protocol · UN Treaty</div><h3>Optional Protocol to CEDAW</h3><p class="desc">Allows individuals and groups to submit complaints directly to the UN CEDAW Committee after exhausting domestic remedies. Sri Lanka's ratification status is monitored by the NCW.</p></div>
           <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">Learn More</a></div>
@@ -682,7 +798,7 @@
     <div class="container">
       <span class="eyebrow">Get in Touch</span>
       <h1>Contact Us</h1>
-      <p>Reach the National Commission on Women. For formal complaints, our online mechanism will be available in Phase 2.</p>
+      <p>Reach the National Commission on Women. Contact us by email or post for general enquiries and formal complaints.</p>
     </div>
   </div>
 
@@ -696,8 +812,16 @@
           <div class="cdetail"><div class="cicon">📍</div><div class="cdetail-text"><div class="lb">Postal Address</div><div class="vl">National Commission on Women<br>[Address — to be added]<br>Sri Lanka</div></div></div>
           <div class="cdetail"><div class="cicon">🌐</div><div class="cdetail-text"><div class="lb">Website</div><div class="vl">ncwsrilanka.org</div></div></div>
           <div class="complaints-box">
-            <h4>Complaints &amp; Grievances</h4>
-            <p>The NCW is mandated to receive and investigate complaints regarding violations of women's rights. A formal online complaints mechanism will be available in <strong>Phase 2</strong>. In the meantime, please contact us by email or post.</p>
+            <h4>How to Submit a Complaint</h4>
+            <p>The NCW is mandated to receive and investigate complaints regarding violations of women's rights. Any complaint may be made by an aggrieved person, or by any person acting on her behalf.</p>
+            <p style="margin-top:12px"><strong>Key timelines under the Act:</strong></p>
+            <ul style="margin-top:8px;padding-left:0;list-style:none">
+              <li style="padding:6px 0;border-bottom:1px solid var(--p5);font-size:0.92rem;color:var(--tmid);display:flex;gap:10px"><span style="color:var(--p2);font-weight:600;flex-shrink:0">1 month</span> to submit a complaint from the date of the infringement</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--p5);font-size:0.92rem;color:var(--tmid);display:flex;gap:10px"><span style="color:var(--p2);font-weight:600;flex-shrink:0">14 days</span> for the NCW to inform you of the action taken on your complaint</li>
+              <li style="padding:6px 0;border-bottom:1px solid var(--p5);font-size:0.92rem;color:var(--tmid);display:flex;gap:10px"><span style="color:var(--p2);font-weight:600;flex-shrink:0">60 days</span> for mediation to be concluded if referred to mediation</li>
+              <li style="padding:6px 0;font-size:0.92rem;color:var(--tmid);display:flex;gap:10px"><span style="color:var(--p2);font-weight:600;flex-shrink:0">1 month</span> to appeal a decision of the Commission to the Court of Appeal</li>
+            </ul>
+            <p style="margin-top:14px;font-size:0.92rem;color:var(--tmid)">Please contact us by email or post to submit a complaint. The NCW also has the power to investigate matters on its own initiative.</p>
           </div>
         </div>
         <div class="contact-form-panel">
@@ -710,7 +834,7 @@
           </div>
           <div class="form-field"><label>Message</label><textarea placeholder="Your message…"></textarea></div>
           <button class="btn btn-dk" style="width:100%;justify-content:center" onclick="alert('Thank you. This form will be active when the site goes live.')">Send Message</button>
-          <div class="phase2-note">🔒 Formal complaints submission will be available in Phase 2 of the website.</div>
+
         </div>
       </div>
     </div>

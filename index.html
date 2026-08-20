@@ -3,1114 +3,1053 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>National Commission on Women – Sri Lanka</title>
+<title>National Commission on Women — Sri Lanka</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--purple:#52309A;--purple2:#6B42B8;--purple3:#8B66C8;--purple4:#B090DC;--purple5:#D4C0EE;--purple6:#F0EBF9;--purple7:#F8F5FD;--terra:#C87850;--terra2:#D8926A;--terra3:#EDCAA8;--terra4:#FBF3EC;--gold:#C8963E;--gold2:#E8B96A;--gold3:#F5ECD9;--cream:#FAF8F3;--text:#1A1025;--tmid:#4A3A6A;--tlt:#7A6A9A;--border:#DDD4F0;--sh:0 2px 20px rgba(91,52,144,0.10);--sh-lg:0 8px 40px rgba(91,52,144,0.18)}
+:root{
+  --purple:#672D62;
+  --purple-dk:#4E2049;
+  --purple-lt:#F5EFF4;
+  --purple-lt2:#EADCE8;
+  --grey:#CFCFCF;
+  --teal:#003C4B;
+  --lavender:#E2D9FF;
+  --green:#AED799;
+  --cyan:#C8F0FF;
+  --dkgreen:#0B4E05;
+  --white:#FFFFFF;
+  --text:#241A23;
+  --tmid:#5C4B59;
+  --tlt:#8B7C89;
+  --border:#E3DCE2;
+  --focus:#0B4E05;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Jost',sans-serif;font-size:18px;color:var(--text);background:var(--cream);line-height:1.75}
-.page{display:none}.page.active{display:block}
-h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.1}
-h1{font-size:clamp(2.6rem,5vw,4rem);font-weight:700}
-h2{font-size:clamp(2rem,3.5vw,3rem);font-weight:700}
-h3{font-size:1.8rem;font-weight:600}
-h4{font-size:1.3rem;font-weight:600}
-.eyebrow{font-family:'Jost',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--terra);display:block;margin-bottom:14px}
-.container{max-width:1100px;margin:0 auto;padding:0 32px}
-.section{padding:88px 0}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:4px;font-family:'Jost',sans-serif;font-weight:700;font-size:0.88rem;text-decoration:none;cursor:pointer;border:none;transition:all 0.2s;letter-spacing:0.06em;text-transform:uppercase}
-.btn-dk{background:var(--purple);color:#fff}.btn-dk:hover{background:#2A1248;transform:translateY(-2px);box-shadow:0 6px 20px rgba(61,31,106,0.4)}
-.btn-terra{background:var(--terra);color:#fff}.btn-terra:hover{background:#a8552e;transform:translateY(-2px);box-shadow:0 6px 20px rgba(196,103,58,0.4)}
-.btn-ol{background:transparent;color:var(--purple);border:2px solid var(--purple)}.btn-ol:hover{background:var(--purple6)}
-.btn-ol-wh{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5)}.btn-ol-wh:hover{background:rgba(255,255,255,0.1)}
-.btn-md{background:var(--purple3);color:#fff}.btn-md:hover{background:var(--purple2)}
-.btn-sm{padding:9px 20px;font-size:0.78rem}
+html{scroll-behavior:smooth;font-size:100%}
+body{font-family:'Inter',sans-serif;font-size:1.0625rem;color:var(--text);background:var(--white);line-height:1.7}
+h1,h2,h3,h4{font-family:'Noto Serif',serif;color:var(--purple);line-height:1.15;font-weight:700}
+h1{font-size:clamp(2.2rem,4.4vw,3.2rem)}
+h2{font-size:clamp(1.7rem,3vw,2.3rem)}
+h3{font-size:1.35rem}
+h4{font-size:1.05rem}
+a{color:inherit}
+button{font-family:inherit}
+img{max-width:100%;display:block}
+.page{display:none}
+.page.active{display:block}
+.container{max-width:1120px;margin:0 auto;padding:0 32px}
+.section{padding:76px 0}
+.eyebrow{display:block;font-size:0.72rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.tmid{color:var(--tmid)}
+.lead{color:var(--tmid);font-size:1.05rem;line-height:1.8}
 
-/* ── NAV ── */
-nav{background:#fff;border-bottom:3px solid var(--purple);position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(61,31,106,0.12)}
-.nav-main{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
-.nav-brand{display:flex;align-items:center;gap:14px;cursor:pointer;text-decoration:none;flex-shrink:0}
-.nav-logo{width:40px;height:40px;background:var(--purple);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.nav-logo svg{width:22px;height:22px;fill:#fff}
-.nav-brand-text .org{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:700;color:var(--purple);line-height:1.1}
-.nav-brand-text .country{font-size:0.68rem;color:var(--tlt);letter-spacing:0.08em;text-transform:uppercase}
-.nav-links{display:flex;gap:2px;align-items:center;flex-wrap:nowrap}
-.nav-links a{font-size:0.74rem;font-weight:700;color:var(--tmid);text-decoration:none;padding:7px 10px;border-radius:3px;transition:all 0.2s;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase;white-space:nowrap}
-.nav-links a:hover,.nav-links a.active{background:var(--purple);color:#fff}
-.nav-complaint{display:inline-flex;align-items:center;gap:6px;background:var(--terra);color:#fff;padding:9px 16px;font-family:'Jost',sans-serif;font-weight:700;font-size:0.74rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:none;border-radius:3px;transition:all 0.2s;flex-shrink:0;white-space:nowrap}
-.nav-complaint:hover{background:#a8552e;transform:translateY(-1px)}
-.nav-utility{background:var(--purple7);border-bottom:1px solid var(--border)}
-.nav-utility-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;gap:2px;align-items:center;height:48px;overflow-x:auto}
-.nav-utility-inner::-webkit-scrollbar{display:none}
-.nav-utility-inner a{font-size:0.80rem;font-weight:700;color:var(--tmid);text-decoration:none;padding:7px 14px;border-radius:3px;transition:all 0.15s;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase;white-space:nowrap}
-.nav-utility-inner a:hover,.nav-utility-inner a.active{background:var(--purple);color:#fff}
-.nav-hamburger{display:flex;flex-direction:column;justify-content:center;background:none;border:none;cursor:pointer;padding:8px;flex-shrink:0}
-.nav-hamburger span{display:block;width:22px;height:2px;background:var(--purple);margin:5px 0;transition:all 0.2s}
-.nav-mob-menu{display:none;background:#fff;border-bottom:3px solid var(--purple);padding:16px 32px 20px;flex-direction:column;gap:4px}
-.nav-mob-menu.open{display:flex}
-.nav-mob-menu a{font-size:0.88rem;font-weight:700;color:var(--tmid);padding:10px 12px;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase;border-bottom:1px solid var(--border)}
-.nav-mob-menu a:hover{color:var(--purple)}
-.nav-mob-menu .mob-complaint{background:var(--terra);color:#fff;border-radius:3px;text-align:center;margin-top:8px;border:none}
-
-/* ── FLOATING COMPLAINT BUTTON ── */
-.fab-complaint{position:fixed;bottom:28px;right:28px;z-index:300;background:var(--terra);color:#fff;border:none;border-radius:50px;padding:16px 26px;font-family:'Jost',sans-serif;font-weight:700;font-size:0.86rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 6px 28px rgba(196,103,58,0.55);display:flex;align-items:center;gap:10px;transition:all 0.25s}
-.fab-complaint:hover{background:#a8552e;transform:translateY(-3px);box-shadow:0 10px 36px rgba(196,103,58,0.65)}
-.fab-icon{font-size:1.1rem}
-
-/* ── HERO ── */
-.hero{background:var(--purple);padding:100px 0 88px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;border:80px solid rgba(255,255,255,0.04);border-radius:50%}
-.hero::after{content:'';position:absolute;bottom:-60px;left:-60px;width:360px;height:360px;background:rgba(196,103,58,0.12);border-radius:50%}
-.hero-inner{max-width:840px;margin:0 auto;padding:0 32px;text-align:center;position:relative}
-.hero-tag{display:inline-block;background:rgba(196,103,58,0.2);color:var(--terra3);border:1px solid rgba(196,103,58,0.35);padding:7px 18px;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:32px}
-.hero h1{color:#fff;margin-bottom:26px;line-height:1.1}
-.hero h1 em{font-style:italic;color:var(--terra3)}
-.hero-lead{font-size:1.1rem;color:rgba(255,255,255,0.72);line-height:1.85;margin-bottom:44px;max-width:620px;margin-left:auto;margin-right:auto}
-.hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
-.btn-complaint-hero{background:var(--terra);color:#fff;padding:16px 34px;font-family:'Jost',sans-serif;font-weight:700;font-size:1rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:none;border-radius:4px;display:inline-flex;align-items:center;gap:10px;transition:all 0.2s;box-shadow:0 4px 16px rgba(196,103,58,0.5)}
-.btn-complaint-hero:hover{background:#a8552e;transform:translateY(-2px)}
-
-/* ── QUOTE / STATS ── */
-.quote-strip{background:var(--terra);padding:40px 0}
-.quote-strip-inner{max-width:860px;margin:0 auto;padding:0 32px;text-align:center}
-.quote-strip blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3vw,2rem);font-style:italic;color:#fff;line-height:1.6;margin-bottom:14px}
-.quote-strip cite{font-size:0.78rem;color:rgba(255,255,255,0.6);letter-spacing:0.1em;text-transform:uppercase}
-.stats-bar{background:var(--text);color:#fff;padding:36px 0}
-.stats-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;text-align:center}
-.stat-item .number{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;line-height:1;display:block;margin-bottom:8px;color:var(--terra3)}
-.stat-item .label{font-size:0.76rem;opacity:0.5;letter-spacing:0.1em;text-transform:uppercase;font-weight:600}
-
-/* ── VIOLATIONS / WHO CAN REACH ── */
-.violations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
-.viol-card{background:#fff;border:2px solid var(--border);border-top:4px solid var(--terra);padding:28px 22px;transition:all 0.2s}
-.viol-card:hover{border-top-color:var(--purple);transform:translateY(-3px);box-shadow:var(--sh)}
-.viol-icon{font-size:2rem;margin-bottom:14px;display:block}
-.viol-card h4{font-family:'Jost',sans-serif;font-size:0.90rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px}
-.viol-card p{font-size:0.88rem;color:var(--tmid);line-height:1.65}
-.who-band{background:var(--purple6);padding:52px 0;margin-top:0}
-.who-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.who-text h2{color:var(--purple);margin-bottom:18px}
-.who-text p{color:var(--tmid);font-size:1rem;line-height:1.85;margin-bottom:14px}
-.who-boxes{display:flex;flex-direction:column;gap:10px}
-.who-box{background:#fff;border-left:4px solid var(--terra);padding:18px 20px;display:flex;align-items:flex-start;gap:14px;box-shadow:var(--sh)}
-.who-box .wi{font-size:1.5rem;flex-shrink:0}
-.who-box p{font-size:0.92rem;color:var(--tmid);line-height:1.6}
-.who-box strong{display:block;color:var(--text);font-weight:700;margin-bottom:4px;font-size:0.88rem}
-
-/* ── HOW GRID ── */
-.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px;border:2px solid var(--text);overflow:hidden}
-.how-item{padding:40px 28px;border-right:2px solid var(--text);transition:background 0.2s;background:#fff}
-.how-item:last-child{border-right:none}
-.how-item:hover{background:var(--terra4)}
-.how-icon{font-size:2.2rem;margin-bottom:18px;display:block}
-.how-item h4{font-size:1.2rem;color:var(--purple);margin-bottom:10px}
-.how-item p{font-size:0.92rem;color:var(--tmid);line-height:1.7}
-
-/* ── LATEST / PILLARS / ABOUT BAND ── */
-.latest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px;border:2px solid var(--text);overflow:hidden}
-.doc-card{background:#fff;border-right:2px solid var(--text);cursor:pointer;transition:background 0.2s}
-.doc-card:last-child{border-right:none}
-.doc-card:hover{background:var(--purple7)}
-.doc-card-bar{height:6px}
-.doc-card-bar.t1{background:var(--terra)}.doc-card-bar.t2{background:var(--gold)}.doc-card-bar.p3{background:var(--purple3)}
-.doc-card-body{padding:30px 26px 26px}
-.doc-tag{display:inline-block;font-size:0.70rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:4px 12px;margin-bottom:16px;background:var(--terra4);color:var(--terra)}
-.doc-card h4{font-size:1.25rem;color:var(--text);margin-bottom:12px;line-height:1.2}
-.doc-card p{font-size:0.92rem;color:var(--tmid);line-height:1.7;margin-bottom:20px}
-.doc-card-footer{font-size:0.80rem;color:var(--tlt)}
-.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-.pillar{background:#fff;padding:40px 30px;border-left:4px solid var(--terra);box-shadow:var(--sh)}
-.pillar-icon{font-size:2rem;margin-bottom:18px;display:block}
-.pillar h3{font-size:1.5rem;margin-bottom:12px;color:var(--purple)}
-.pillar p{font-size:0.95rem;color:var(--tmid);line-height:1.75}
-.about-band{background:var(--purple);color:#fff;padding:88px 0}
-.about-band-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}
-.about-band h2{color:#fff;margin-bottom:20px}
-.about-band p{color:rgba(255,255,255,0.75);font-size:1rem;line-height:1.85;margin-bottom:16px}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:3px}
-.about-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:28px 22px;text-align:center}
-.about-stat .num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--terra3);display:block;margin-bottom:8px}
-.about-stat .lbl{font-size:0.76rem;color:rgba(255,255,255,0.45);letter-spacing:0.1em;text-transform:uppercase}
-.instruments-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:40px}
-.chip{display:flex;align-items:center;gap:14px;padding:20px 22px;border:2px solid var(--border);cursor:pointer;transition:all 0.2s;background:#fff}
-.chip:hover{border-color:var(--terra);background:var(--terra4)}
-.chip-nat{border-left:4px solid var(--purple2)}
-.chip-intl{border-left:4px solid var(--terra)}
-.chip .ci{font-size:1.5rem;flex-shrink:0}
-.chip .ct .tt{font-size:0.92rem;font-weight:600;color:var(--text);line-height:1.3}
-.chip .ct .ss{font-size:0.78rem;color:var(--tlt);margin-top:3px}
-
-/* ── ABOUT PAGE ── */
-.about-hero{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
-.about-hero-left{background:var(--purple);padding:80px 60px 80px 32px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
-.about-hero-left::before{content:'';position:absolute;bottom:-60px;left:-40px;width:280px;height:280px;border:50px solid rgba(196,103,58,0.15);border-radius:50%}
-.about-hero-left .eyebrow{color:var(--terra3)}
-.about-hero-left h1{color:#fff;font-size:clamp(2.4rem,4vw,3.8rem);margin-bottom:24px}
-.about-hero-left h1 em{color:var(--terra3);font-style:italic}
-.about-hero-left p{color:rgba(255,255,255,0.72);font-size:1rem;line-height:1.85;max-width:420px}
-.about-hero-right{background:var(--terra);padding:80px 48px 80px 60px;display:flex;flex-direction:column;justify-content:center;gap:0}
-.about-hero-right h3{font-family:'Jost',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:32px}
-.about-key-stat{border-bottom:1px solid rgba(255,255,255,0.15);padding:20px 0;display:flex;align-items:baseline;gap:16px}
-.about-key-stat:first-of-type{padding-top:0}
-.about-key-stat:last-of-type{border-bottom:none;padding-bottom:0}
-.about-key-stat .aks-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:#fff;line-height:1;flex-shrink:0}
-.about-key-stat .aks-label{font-size:0.92rem;color:rgba(255,255,255,0.75);line-height:1.4}
-.mandate-section{background:#fff}
-.mandate-grid{display:grid;grid-template-columns:3fr 2fr;gap:72px;align-items:start}
-.mandate-text p{color:var(--tmid);line-height:1.9;margin-bottom:22px;font-size:1rem}
-.mandate-text h3{font-size:1.6rem;color:var(--purple);margin:40px 0 18px;display:flex;align-items:center;gap:14px}
-.mandate-text h3::after{content:'';flex:1;height:2px;background:var(--terra);opacity:0.3}
-.info-block{margin-bottom:4px}
-.info-block-hdr{background:var(--purple);color:#fff;padding:14px 22px;display:flex;align-items:center;gap:10px}
-.info-block-hdr h4{font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#fff}
-.info-block-hdr span{font-size:1.1rem}
-.info-block-body{background:var(--purple7);border:1px solid var(--border);border-top:none;padding:20px 22px}
-.info-block-body p{font-size:0.94rem;color:var(--tmid);line-height:1.75}
-.info-block-body p+p{margin-top:10px}
-.info-block.terra .info-block-hdr{background:var(--terra)}
-.objectives-section{background:var(--text)}
-.objectives-section .eyebrow{color:var(--terra3)}
-.objectives-section h2{color:#fff;margin-bottom:16px}
-.obj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;margin-top:40px}
-.obj-item{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:28px 28px 28px 24px;display:flex;gap:20px;align-items:flex-start;transition:background 0.2s}
-.obj-item:hover{background:rgba(196,103,58,0.1)}
-.obj-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--terra2);line-height:0.9;flex-shrink:0;width:48px}
-.obj-item p{font-size:0.95rem;color:rgba(255,255,255,0.72);line-height:1.65;padding-top:6px}
-.powers-section{background:var(--terra4)}
-.powers-section .eyebrow{color:var(--terra)}
-.powers-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;margin-top:44px;border:2px solid var(--terra);overflow:hidden}
-.power-card{background:#fff;padding:28px 26px;border-right:2px solid var(--terra);border-bottom:2px solid var(--terra);display:flex;gap:16px;transition:background 0.2s}
-.power-card:hover{background:var(--terra4)}
-.power-icon{font-size:1.8rem;flex-shrink:0;margin-top:2px}
-.power-card h4{font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:700;color:var(--purple);margin-bottom:8px}
-.power-card p{font-size:0.88rem;color:var(--tmid);line-height:1.65}
-.enforcement-section{background:var(--purple6)}
-.enforcement-section .eyebrow{color:var(--terra)}
-.enf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:3px;margin-top:44px}
-.enf-card{display:grid;grid-template-columns:90px 1fr;overflow:hidden;border:2px solid var(--purple)}
-.enf-label{background:var(--purple);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 12px;text-align:center}
-.enf-time{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--terra3);line-height:1;display:block}
-.enf-unit{font-size:0.62rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;display:block}
-.enf-body{background:#fff;padding:22px}
-.enf-body h4{font-family:'Jost',sans-serif;font-size:0.88rem;font-weight:700;color:var(--purple);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
-.enf-body p{font-size:0.86rem;color:var(--tmid);line-height:1.65}
-.values-section{background:var(--purple)}
-.values-section .eyebrow{color:var(--terra3)}
-.values-section h2{color:#fff;margin-bottom:48px}
-.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
-.value-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.09);padding:36px 26px;text-align:center;transition:background 0.2s}
-.value-card:hover{background:rgba(196,103,58,0.15)}
-.value-icon{font-size:2.4rem;margin-bottom:16px;display:block}
-.value-card h4{font-size:1.15rem;color:#fff;margin-bottom:10px}
-.value-card p{font-size:0.88rem;color:rgba(255,255,255,0.55);line-height:1.65}
-.comm-section{background:#fff}
-.commissioners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:44px;border:2px solid var(--text);overflow:hidden}
-.comm-card{border-right:2px solid var(--text);background:#fff;transition:background 0.2s}
-.comm-card:last-child{border-right:none}
-.comm-card:hover{background:var(--purple7)}
-.comm-photo{background:var(--purple6);height:160px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;color:var(--purple4);border-bottom:4px solid var(--terra)}
-.comm-info{padding:20px 18px 22px}
-.comm-info .name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:700;color:var(--text);line-height:1.2;margin-bottom:6px}
-.comm-info .role{font-size:0.82rem;color:var(--tlt);line-height:1.5}
-.comm-badge{font-size:0.70rem;color:#fff;background:var(--terra);padding:4px 10px;display:inline-block;margin-top:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
-
-/* ── PAGE HERO ── */
-.page-hero{background:var(--purple);color:#fff;padding:72px 0 60px;border-bottom:4px solid var(--terra)}
-.page-hero .eyebrow{color:var(--terra3)}
-.page-hero h1{color:#fff;margin-bottom:18px}
-.page-hero p{color:rgba(255,255,255,0.72);font-size:1.05rem;max-width:620px;line-height:1.85}
-
-/* ── ACTS & LAWS PAGE ── */
-.legal-group-hdr{display:flex;align-items:center;gap:16px;margin-bottom:32px;padding-bottom:18px;border-bottom:3px solid var(--terra)}
-.legal-group-hdr h2{font-size:2rem;color:var(--purple)}
-.legal-cards{display:grid;grid-template-columns:1fr 1fr;gap:3px;border:2px solid var(--border);overflow:hidden}
-.legal-card{background:#fff;display:flex;flex-direction:column;border-right:2px solid var(--border)}
-.legal-card:last-child{border-right:none}
-.legal-card-top{padding:28px 26px 20px;flex:1}
-.legal-card-top .lct{font-size:0.70rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--terra);margin-bottom:10px}
-.legal-card-top h3{font-size:1.3rem;margin-bottom:10px;color:var(--text)}
-.legal-card-top .desc{font-size:0.95rem;color:var(--tmid);line-height:1.75}
-.legal-card-foot{padding:18px 26px;border-top:2px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;background:var(--purple7)}
-.we-act-hero{background:var(--purple);color:#fff;padding:44px 40px;margin-bottom:4px;position:relative;overflow:hidden;border-left:6px solid var(--terra)}
-.we-act-hero::before{content:'';position:absolute;top:-50px;right:-50px;width:240px;height:240px;border:50px solid rgba(255,255,255,0.05);border-radius:50%}
-.we-act-hero .tag{background:var(--terra);color:#fff;padding:5px 14px;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;display:inline-block;margin-bottom:18px}
-.we-act-hero h2{color:#fff;margin-bottom:14px;font-size:2.2rem}
-.we-act-hero p{color:rgba(255,255,255,0.72);font-size:1rem;line-height:1.8;margin-bottom:28px;max-width:520px}
-.lang-btns{display:flex;gap:10px;flex-wrap:wrap}
-.lang-btn{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.10);border:1.5px solid rgba(255,255,255,0.3);color:#fff;padding:11px 20px;font-size:0.86rem;font-weight:600;cursor:pointer;transition:background 0.2s;font-family:'Jost',sans-serif;letter-spacing:0.04em}
-.lang-btn:hover{background:rgba(196,103,58,0.3);border-color:var(--terra3)}
-/* Plain language summary accordion */
-.act-summary{border:2px solid var(--border);border-top:none;margin-bottom:16px;background:#fff}
-.act-summary-toggle{width:100%;background:var(--gold3);border:none;padding:14px 22px;text-align:left;font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:700;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:10px;letter-spacing:0.04em;transition:background 0.2s}
-.act-summary-toggle:hover{background:var(--terra3)}
-.act-summary-toggle .ast-icon{font-size:1rem}
-.act-summary-toggle .ast-arrow{margin-left:auto;transition:transform 0.2s;font-size:0.8rem}
-.act-summary-toggle.open .ast-arrow{transform:rotate(180deg)}
-.act-summary-body{display:none;padding:20px 22px;background:#fff;border-top:1px solid var(--border)}
-.act-summary-body.open{display:block}
-.act-summary-body p{font-size:0.94rem;color:var(--tmid);line-height:1.8;margin-bottom:10px}
-.act-summary-body ul{margin:8px 0 10px 20px}
-.act-summary-body li{font-size:0.92rem;color:var(--tmid);line-height:1.7;margin-bottom:6px}
-.act-summary-label{background:var(--gold);color:#fff;padding:3px 10px;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;display:inline-block;margin-bottom:10px}
-
-/* ── RESOURCES / DOCS ── */
-.docs-layout{max-width:1100px;margin:0 auto;padding:52px 32px 72px;display:grid;grid-template-columns:220px 1fr;gap:40px}
-.sidebar-box{background:#fff;padding:22px;border:2px solid var(--border);margin-bottom:4px}
-.sidebar-box h5{font-family:'Jost',sans-serif;font-size:0.70rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--tlt);margin-bottom:14px}
-.sidebar-filter{display:flex;flex-direction:column;gap:3px}
-.filter-btn{background:none;border:none;text-align:left;padding:10px 12px;font-family:'Jost',sans-serif;font-size:0.88rem;color:var(--tmid);cursor:pointer;transition:all 0.15s;display:flex;align-items:center;gap:10px;font-weight:500}
-.filter-btn:hover,.filter-btn.active{background:var(--purple);color:#fff}
-.fdot{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--terra)}
-.docs-search{position:relative;margin-bottom:28px}
-.docs-search input{width:100%;padding:13px 18px 13px 48px;border:2px solid var(--border);font-family:'Jost',sans-serif;font-size:0.95rem;color:var(--text);background:#fff;outline:none;transition:border-color 0.2s}
-.docs-search input:focus{border-color:var(--purple)}
-.docs-search .si{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--tlt);font-size:1.1rem}
-.docs-list{display:flex;flex-direction:column;gap:3px}
-.doc-row{background:#fff;border:2px solid var(--border);padding:22px 26px;display:flex;align-items:center;gap:18px;transition:border-color 0.2s,transform 0.15s}
-.doc-row:hover{border-color:var(--purple);transform:translateX(6px)}
-.drbar{width:5px;height:68px;flex-shrink:0}
-.drbar.p1{background:var(--purple)}.drbar.p2{background:var(--terra)}.drbar.p3{background:var(--gold)}
-.drb{flex:1}
-.drb .title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:6px}
-.drb .meta{font-size:0.82rem;color:var(--tlt);display:flex;gap:14px;flex-wrap:wrap}
-/* Gallery inside resources */
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:16px}
-.gallery-item{background:var(--purple6);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:2rem;color:var(--purple4);border:2px solid var(--border);transition:opacity 0.2s;cursor:pointer}
-.gallery-item:hover{opacity:0.85}
-.press-row{background:#fff;border:2px solid var(--border);padding:20px 24px;display:flex;align-items:flex-start;gap:16px;margin-bottom:3px;transition:border-color 0.2s}
-.press-row:hover{border-color:var(--terra)}
-.press-date{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:var(--terra);line-height:1;flex-shrink:0;width:52px;text-align:center}
-.press-date span{font-family:'Jost',sans-serif;font-size:0.62rem;display:block;color:var(--tlt);letter-spacing:0.1em;text-transform:uppercase;margin-top:2px}
-.press-body .title{font-weight:700;font-size:1rem;color:var(--text);margin-bottom:5px}
-.press-body .meta{font-size:0.82rem;color:var(--tlt)}
-
-/* ── DOWNLOADS PAGE ── */
-.download-section-hdr{display:flex;align-items:center;gap:14px;padding:18px 0 14px;border-bottom:3px solid var(--terra);margin-bottom:20px}
-.download-section-hdr h3{font-size:1.4rem;color:var(--purple)}
-.download-row{background:#fff;border:2px solid var(--border);padding:20px 26px;display:flex;align-items:center;gap:18px;margin-bottom:3px;transition:all 0.2s}
-.download-row:hover{border-color:var(--purple);transform:translateX(4px)}
-.dl-icon{font-size:2rem;flex-shrink:0}
-.dl-body{flex:1}
-.dl-body .dl-title{font-weight:700;font-size:1rem;color:var(--text);margin-bottom:4px}
-.dl-body .dl-meta{font-size:0.82rem;color:var(--tlt)}
-.dl-actions{display:flex;gap:8px;flex-shrink:0}
-.btn-dl{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;background:var(--purple);color:#fff;font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s;text-decoration:none}
-.btn-dl:hover{background:var(--terra)}
-.dl-placeholder-note{background:var(--terra4);border-left:4px solid var(--terra);padding:14px 18px;font-size:0.88rem;color:var(--tmid);margin-top:16px}
-
-/* ── DECISIONS PAGE ── */
-.decision-row{background:#fff;border:2px solid var(--border);padding:22px 26px;display:flex;align-items:flex-start;gap:18px;margin-bottom:3px;transition:all 0.2s}
-.decision-row:hover{border-color:var(--purple);transform:translateX(4px)}
-.dec-type-badge{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;background:var(--purple);color:#fff;flex-shrink:0;white-space:nowrap;margin-top:4px}
-.dec-type-badge.med{background:var(--terra)}.dec-type-badge.rec{background:var(--gold)}
-.dec-body{flex:1}
-.dec-body .dec-ref{font-size:0.76rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--tlt);margin-bottom:6px}
-.dec-body .dec-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.3}
-.dec-body .dec-summary{font-size:0.90rem;color:var(--tmid);line-height:1.65;margin-bottom:8px}
-.dec-body .dec-meta{font-size:0.80rem;color:var(--tlt)}
-
-/* ── SCHEDULE PAGE ── */
-.schedule-notice{background:var(--purple6);border-left:4px solid var(--purple);padding:18px 22px;margin-bottom:36px;font-size:0.94rem;color:var(--tmid);line-height:1.7}
-.sched-table{width:100%;border-collapse:collapse;font-size:0.90rem}
-.sched-table th{background:var(--purple);color:#fff;padding:14px 18px;text-align:left;font-family:'Jost',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase}
-.sched-table td{padding:14px 18px;border-bottom:1px solid var(--border);color:var(--tmid);vertical-align:top}
-.sched-table tr:nth-child(even) td{background:var(--purple7)}
-.sched-table tr:hover td{background:var(--terra4)}
-.sched-type{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px}
-.sched-type.inquiry{background:var(--purple);color:#fff}
-.sched-type.mediation{background:var(--terra);color:#fff}
-.sched-type.hearing{background:var(--gold);color:#fff}
-.sched-status{display:inline-block;font-size:0.68rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px}
-.sched-status.scheduled{background:#E8F5E9;color:#2E7D32}
-.sched-status.postponed{background:#FFF3E0;color:#E65100}
-.sched-placeholder{background:var(--cream);border:2px dashed var(--border);padding:52px 32px;text-align:center;color:var(--tlt);font-size:0.94rem}
-.sched-placeholder .pi{font-size:2.5rem;margin-bottom:16px;display:block}
-
-/* ── CAREERS PAGE ── */
-.vacancy-card{background:#fff;border:2px solid var(--border);border-top:4px solid var(--purple);padding:32px 30px;margin-bottom:16px;transition:all 0.2s}
-.vacancy-card:hover{border-top-color:var(--terra);box-shadow:var(--sh)}
-.vacancy-card .vc-tag{font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--terra);margin-bottom:10px;display:block}
-.vacancy-card h3{font-size:1.5rem;color:var(--text);margin-bottom:14px}
-.vacancy-card .vc-meta{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:16px}
-.vc-meta span{font-size:0.84rem;color:var(--tlt);display:flex;align-items:center;gap:6px}
-.vacancy-card .vc-desc{font-size:0.94rem;color:var(--tmid);line-height:1.75;margin-bottom:20px}
-.no-vacancies{background:var(--purple7);border:2px dashed var(--border);padding:52px 32px;text-align:center}
-.no-vacancies .nv-icon{font-size:2.5rem;margin-bottom:16px;display:block}
-.no-vacancies h3{color:var(--purple);margin-bottom:12px}
-.no-vacancies p{font-size:0.94rem;color:var(--tlt);max-width:440px;margin:0 auto;line-height:1.75}
-.careers-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
-.careers-info-card{background:#fff;border:2px solid var(--border);padding:28px 24px;border-left:4px solid var(--terra)}
-.careers-info-card .ci-icon{font-size:1.8rem;margin-bottom:14px;display:block}
-.careers-info-card h4{font-family:'Jost',sans-serif;font-size:0.88rem;font-weight:700;color:var(--purple);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px}
-.careers-info-card p{font-size:0.88rem;color:var(--tmid);line-height:1.65}
-
-/* ── FAQ PAGE ── */
-.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:48px}
-.faq-col h3{font-size:1.3rem;color:var(--purple);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--terra)}
-.faq-item{border:2px solid var(--border);margin-bottom:4px}
-.faq-toggle{width:100%;background:#fff;border:none;padding:18px 22px;text-align:left;font-family:'Jost',sans-serif;font-size:0.94rem;font-weight:700;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:12px;justify-content:space-between;transition:background 0.15s}
-.faq-toggle:hover{background:var(--purple6)}
-.faq-toggle.open{background:var(--purple);color:#fff}
-.faq-toggle .fq-q{flex:1;text-align:left;line-height:1.4}
-.faq-toggle .fq-arrow{flex-shrink:0;font-size:0.8rem;transition:transform 0.2s}
-.faq-toggle.open .fq-arrow{transform:rotate(180deg)}
-.faq-body{display:none;padding:18px 22px;background:var(--purple7);border-top:1px solid var(--border)}
-.faq-body.open{display:block}
-.faq-body p{font-size:0.92rem;color:var(--tmid);line-height:1.8}
-.faq-body ul{margin:10px 0 0 18px}
-.faq-body li{font-size:0.92rem;color:var(--tmid);line-height:1.7;margin-bottom:6px}
-.faq-cta{background:var(--purple);padding:52px 0;margin-top:60px}
-.faq-cta-inner{max-width:700px;margin:0 auto;padding:0 32px;text-align:center}
-.faq-cta h2{color:#fff;margin-bottom:16px}
-.faq-cta p{color:rgba(255,255,255,0.7);font-size:1rem;line-height:1.8;margin-bottom:28px}
-
-/* ── CONTACT ── */
-.complaint-hero-band{background:var(--terra);padding:32px 0}
-.complaint-hero-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.complaint-hero-inner h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#fff}
-.complaint-hero-inner p{color:rgba(255,255,255,0.75);font-size:0.94rem;margin-top:4px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;margin-top:52px}
-.contact-info h3{font-size:1.6rem;color:var(--purple);margin-bottom:18px}
-.contact-info p{font-size:1rem;color:var(--tmid);line-height:1.85;margin-bottom:22px}
-.cdetail{display:flex;gap:16px;margin-bottom:20px;align-items:flex-start}
-.cicon{width:46px;height:46px;background:var(--terra);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
-.cdetail-text .lb{font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--tlt);margin-bottom:4px}
-.cdetail-text .vl{font-size:1rem;color:var(--text)}
-.complaints-box{background:var(--purple);padding:32px 30px;margin-top:28px}
-.complaints-box h4{color:var(--terra3);font-size:1.2rem;margin-bottom:14px}
-.complaints-box p{font-size:0.94rem;color:rgba(255,255,255,0.72);line-height:1.8}
-.timeline-list{margin-top:14px;padding:0;list-style:none}
-.timeline-list li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:0.90rem;color:rgba(255,255,255,0.65);display:flex;gap:12px}
-.timeline-list li span{color:var(--terra3);font-weight:700;flex-shrink:0;min-width:60px}
-.contact-form-panel{background:#fff;padding:40px 36px;border:2px solid var(--border)}
-.contact-form-panel h3{color:var(--text);margin-bottom:8px;font-size:1.6rem}
-.contact-form-panel .note{font-size:0.90rem;color:var(--tlt);margin-bottom:28px}
-.form-field{margin-bottom:20px}
-.form-field label{display:block;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--tmid);margin-bottom:8px}
-.form-field input,.form-field textarea,.form-field select{width:100%;padding:12px 15px;border:2px solid var(--border);font-family:'Jost',sans-serif;font-size:0.96rem;color:var(--text);background:var(--cream);outline:none;transition:border-color 0.2s}
-.form-field input:focus,.form-field textarea:focus{border-color:var(--purple)}
-.form-field textarea{resize:vertical;min-height:110px}
-
-/* ── MODAL (PDF + Summary) ── */
-.pdf-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(10,5,20,0.82);z-index:2000;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
-.pdf-modal.open{display:flex}
-.pdf-modal-box{background:#fff;width:92%;max-width:980px;height:88vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,0.5);border-top:4px solid var(--terra);animation:modalIn 0.25s ease}
-@keyframes modalIn{from{opacity:0;transform:scale(0.95) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.pdf-modal-header{padding:16px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--border);background:var(--purple7);flex-shrink:0}
-.pdf-modal-header-left{display:flex;align-items:center;gap:12px}
-.pdf-modal-header-left span{font-size:1.4rem}
-.pdf-modal-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--text)}
-.pdf-modal-actions{display:flex;align-items:center;gap:10px}
-.pdf-modal-download{display:inline-flex;align-items:center;gap:7px;background:var(--terra);color:#fff;padding:9px 18px;font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:700;text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:background 0.2s}
-.pdf-modal-download:hover{background:var(--purple)}
-.pdf-modal-close{background:none;border:2px solid var(--border);width:38px;height:38px;font-size:1rem;cursor:pointer;color:var(--tlt);display:flex;align-items:center;justify-content:center;transition:all 0.2s}
-.pdf-modal-close:hover{background:var(--purple);color:#fff;border-color:var(--purple)}
-.pdf-modal iframe{flex:1;border:none;width:100%;background:#f0f0f0}
-
-/* ── FOOTER ── */
-footer{background:var(--text);color:rgba(255,255,255,0.55);padding:60px 0 32px;border-top:4px solid var(--terra)}
-.footer-inner{max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
-.footer-brand .org{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:#fff;display:block;margin-bottom:6px}
-.footer-brand .country{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.3}
-.footer-brand p{font-size:0.88rem;line-height:1.75;margin-top:16px;max-width:260px}
-.footer-col h5{font-family:'Jost',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:16px}
-.footer-col a{display:block;font-size:0.90rem;color:rgba(255,255,255,0.48);text-decoration:none;margin-bottom:10px;cursor:pointer;transition:color 0.2s}
-.footer-col a:hover{color:var(--terra3)}
-.footer-bottom{max-width:1100px;margin:0 auto;padding:22px 32px 0;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;font-size:0.82rem;flex-wrap:wrap;gap:8px}
-
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  .nav-links{display:none}
-  .nav-complaint{display:none}
+/* focus visibility floor — always on */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+  outline:3px solid var(--focus);outline-offset:2px;
 }
-@media(max-width:768px){
-  body{font-size:17px}
-  .about-hero,.about-band-inner,.mandate-grid,.contact-grid,.footer-inner,.who-inner,.faq-grid{grid-template-columns:1fr}
-  .about-hero-left{padding:60px 32px}
-  .about-hero-right{padding:48px 32px}
-  .about-hero-left::before{display:none}
-  .how-grid,.latest-grid,.pillars-grid,.instruments-row,.legal-cards,.commissioners-grid,.values-grid,.obj-grid,.powers-grid,.enf-grid,.violations-grid,.careers-info-grid{grid-template-columns:1fr}
-  .how-item,.doc-card{border-right:none;border-bottom:2px solid var(--text)}
-  .docs-layout{grid-template-columns:1fr}
-  .docs-sidebar{display:none}
-  .footer-inner{grid-template-columns:1fr 1fr}
-  .pdf-modal-box{width:100%;height:100%;border-top:none}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
-  .enf-card[style*="span 2"]{grid-column:span 1}
-  .complaint-hero-inner{flex-direction:column;text-align:center}
-  .fab-complaint{bottom:18px;right:18px;padding:13px 20px;font-size:0.78rem}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--purple);color:#fff;padding:12px 20px;z-index:5000;font-weight:700;text-decoration:none}
+.skip-link:focus{left:12px;top:12px}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ── buttons ── */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:3px;font-weight:700;font-size:0.86rem;letter-spacing:0.03em;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:#00272f}
+.btn-purple{background:var(--purple);color:#fff}
+.btn-purple:hover{background:var(--purple-dk)}
+.btn-outline{background:transparent;color:var(--purple);border-color:var(--purple)}
+.btn-outline:hover{background:var(--purple-lt)}
+.btn-outline-wh{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-outline-wh:hover{background:rgba(255,255,255,.12)}
+.btn-sm{padding:9px 18px;font-size:0.78rem}
+
+/* ── ripple mark (logo icon + decorative arcs) ── */
+.ripple-icon{display:inline-block}
+.ripple-bg{position:absolute;border-radius:50%;border-style:solid;pointer-events:none}
+
+/* ═══════════ GATEWAY ═══════════ */
+#page-gateway{background:var(--white)}
+.gw-wrap{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:60px 70px 60px 24px}
+.gw-wrap .ripple-bg:nth-child(1){width:640px;height:640px;border-width:1px;border-color:var(--purple-lt2);top:-180px;right:-200px}
+.gw-wrap .ripple-bg:nth-child(2){width:420px;height:420px;border-width:1px;border-color:var(--purple-lt2);bottom:-140px;left:-140px}
+.gw-mark{position:relative;z-index:1;text-align:center;margin-bottom:56px}
+.gw-mark svg{width:64px;height:64px;margin:0 auto 18px}
+.gw-mark .gw-si{font-family:'Noto Sans Sinhala',sans-serif;font-size:1.3rem;color:var(--purple);font-weight:600;margin-bottom:2px}
+.gw-mark .gw-ta{font-family:'Noto Sans Tamil',sans-serif;font-size:1.2rem;color:var(--purple);font-weight:600;margin-bottom:2px}
+.gw-mark .gw-en{font-family:'Noto Serif',serif;font-size:1.1rem;color:var(--tmid);letter-spacing:0.02em}
+.gw-langs{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;width:100%}
+.gw-card{border:2px solid var(--border);padding:36px 26px;text-align:center;background:#fff;cursor:pointer;transition:border-color .15s,transform .15s}
+.gw-card:hover{border-color:var(--purple);transform:translateY(-3px)}
+.gw-card .gw-greet{font-size:1.5rem;color:var(--purple);margin-bottom:8px}
+.gw-card.si .gw-greet{font-family:'Noto Sans Sinhala',sans-serif}
+.gw-card.ta .gw-greet{font-family:'Noto Sans Tamil',sans-serif}
+.gw-card.en .gw-greet{font-family:'Noto Serif',serif;font-weight:700}
+.gw-card .gw-sub{font-size:0.86rem;color:var(--tmid);margin-bottom:20px}
+.gw-card .gw-sub.si{font-family:'Noto Sans Sinhala',sans-serif}
+.gw-card .gw-sub.ta{font-family:'Noto Sans Tamil',sans-serif}
+@media(max-width:720px){.gw-langs{grid-template-columns:1fr}}
+
+/* language notice modal */
+.lang-modal{display:none;position:fixed;inset:0;background:rgba(36,26,35,.55);z-index:4000;align-items:center;justify-content:center;padding:24px}
+.lang-modal.open{display:flex}
+.lang-modal-box{background:#fff;max-width:480px;width:100%;padding:36px 32px;border-top:5px solid var(--purple)}
+.lang-modal-box h3{margin-bottom:14px}
+.lang-modal-box p{color:var(--tmid);line-height:1.75;margin-bottom:10px;font-size:0.96rem}
+.lang-modal-box .lm-native{font-size:1.05rem;color:var(--purple);margin-bottom:6px}
+.lang-modal-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+
+/* ═══════════ SITE CHROME ═══════════ */
+#page-site{display:none}
+#page-site.active{display:block}
+.util-bar{background:var(--purple-lt);border-bottom:1px solid var(--border)}
+.util-inner{max-width:1120px;margin:0 auto;padding:0 32px;display:flex;justify-content:flex-end;align-items:center;height:38px;gap:2px}
+.util-lang{font-size:0.74rem;font-weight:700;letter-spacing:0.04em;color:var(--tmid);padding:6px 10px;cursor:pointer;border-radius:2px;background:none;border:none}
+.util-lang.active,.util-lang:hover{background:var(--purple);color:#fff}
+
+nav.mainnav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:300}
+.nav-logo-row-inner{max-width:1120px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer;text-decoration:none;flex-shrink:1;min-width:0}
+.brand svg{width:44px;height:44px;flex-shrink:0}
+.brand-text{line-height:1.3}
+.brand-text .si{font-family:'Noto Sans Sinhala',sans-serif;font-size:0.88rem;color:var(--purple);font-weight:600}
+.brand-text .ta{font-family:'Noto Sans Tamil',sans-serif;font-size:0.82rem;color:var(--purple);font-weight:600}
+.brand-text .en{font-family:'Noto Serif',serif;font-size:0.94rem;color:var(--tmid);font-weight:600}
+
+.nav-menu-row{background:var(--purple-lt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.nav-menu-row-inner{max-width:1120px;margin:0 auto;padding:0 32px}
+.nav-menu{display:flex;align-items:stretch;gap:2px;justify-content:center;flex-wrap:wrap}
+.nav-item{position:relative;display:flex;align-items:center}
+.nav-toplink{background:none;border:none;height:54px;padding:0 15px;font-size:0.82rem;font-weight:700;color:var(--text);cursor:pointer;display:flex;align-items:center;gap:5px;letter-spacing:0.01em;white-space:nowrap}
+.nav-toplink .caret{font-size:0.62rem;color:var(--tlt)}
+.nav-item:hover .nav-toplink,.nav-toplink.active{color:var(--purple)}
+.nav-dropdown{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--border);border-top:3px solid var(--purple);min-width:260px;box-shadow:0 12px 30px rgba(36,26,35,.14);z-index:10;padding:6px 0}
+.nav-item:hover .nav-dropdown{display:block}
+.nav-dropdown a{display:block;padding:11px 20px;font-size:0.88rem;color:var(--text);text-decoration:none;cursor:pointer;border-left:3px solid transparent}
+.nav-dropdown a:hover{background:var(--purple-lt);border-left-color:var(--purple);color:var(--purple)}
+.nav-hamburger{display:flex;background:none;border:none;cursor:pointer;flex-direction:column;justify-content:center;padding:8px;flex-shrink:0}
+.nav-hamburger span{display:block;width:22px;height:2px;background:var(--purple);margin:5px 0}
+
+.nav-menu-row{display:none}
+@media(min-width:981px){
+  .nav-menu-row{display:block}
 }
-@media(max-width:540px){.commissioners-grid{grid-template-columns:1fr 1fr}.footer-inner{grid-template-columns:1fr}}
+
+.mob-menu{display:none;position:absolute;top:100%;right:0;background:#fff;border:1px solid var(--border);border-top:3px solid var(--purple);width:min(100%,380px);max-height:80vh;overflow-y:auto;box-shadow:0 18px 44px rgba(36,26,35,.2);z-index:200}
+.mob-menu.open{display:block}
+.mob-group{border-bottom:1px solid var(--border)}
+.mob-group-hd{padding:14px 24px;font-weight:700;color:var(--purple);font-size:0.9rem;cursor:pointer}
+.mob-group-hd:hover{background:var(--purple-lt)}
+.mob-menu a{display:block;padding:10px 24px 10px 36px;font-size:0.86rem;color:var(--text);text-decoration:none;cursor:pointer}
+.mob-menu a:hover{background:var(--purple-lt)}
+.mob-menu a.mob-flat{padding-left:24px;font-weight:700;color:var(--purple)}
+@media(max-width:460px){
+  .container{padding:0 18px}
+  .nav-logo-row-inner{padding:14px 18px}
+  .brand svg{width:34px;height:34px}
+  .brand-text{min-width:0}
+  .brand-text div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:44vw}
+  .brand-text .si{font-size:0.7rem}
+  .brand-text .ta{font-size:0.66rem}
+  .brand-text .en{font-size:0.74rem}
+}
+
+/* ── action bar (HRCSL-style quick buttons) ── */
+.action-bar{background:var(--purple-lt);border-bottom:1px solid var(--border);padding:26px 0}
+.action-bar-inner{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.pill-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--teal);color:#fff;border:none;padding:15px 30px;font-weight:700;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;border-radius:30px;cursor:pointer;transition:background .15s}
+.pill-btn:hover{background:#00272f}
+.pill-btn.alt{background:var(--purple)}
+.pill-btn.alt:hover{background:var(--purple-dk)}
+
+/* ── carousels ── */
+.carousel-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px}
+.carousel-wrap{display:flex;align-items:center;gap:10px;margin-top:32px}
+.carousel-track-outer{overflow:hidden;flex:1}
+.carousel-track{display:flex;gap:22px;transition:transform .35s ease}
+.car-card{flex:0 0 calc(33.333% - 15px);background:#fff;border:1px solid var(--border);cursor:pointer;transition:box-shadow .15s}
+.car-card:hover{box-shadow:0 10px 26px rgba(36,26,35,.12)}
+.car-img{background:var(--purple-lt);height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px;text-align:center;border-bottom:3px solid var(--purple)}
+.car-img svg{width:40px;height:40px}
+.car-img .ciw{font-family:'Noto Serif',serif;font-size:0.72rem;color:var(--purple);font-weight:600;line-height:1.4}
+.car-img.alt{background:var(--cyan);border-bottom-color:var(--teal)}
+.car-img.alt .ciw{color:var(--teal)}
+.car-body{padding:20px}
+.car-body h4{font-size:1rem;margin-bottom:8px;line-height:1.35}
+.car-body p{font-size:0.86rem;color:var(--tmid);line-height:1.6;margin-bottom:0}
+.car-body .car-meta{font-size:0.76rem;color:var(--tlt);margin-top:10px}
+.car-arrow{flex-shrink:0;width:40px;height:40px;border-radius:50%;border:none;background:var(--teal);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.car-arrow:hover{background:var(--purple)}
+.view-all-wrap{text-align:center;margin-top:30px}
+@media(max-width:860px){.car-card{flex:0 0 calc(50% - 11px)}}
+@media(max-width:620px){.car-card{flex:0 0 100%}.action-bar-inner{flex-direction:column;align-items:stretch}.pill-btn{text-align:center}}
+
+/* ── fab complaint ── */
+.fab-complaint{position:fixed;bottom:26px;right:26px;z-index:250;background:var(--teal);color:#fff;border:none;border-radius:50px;padding:15px 24px;font-weight:700;font-size:0.84rem;letter-spacing:0.03em;cursor:pointer;box-shadow:0 6px 24px rgba(0,60,75,.4);display:flex;align-items:center;gap:9px}
+.fab-complaint:hover{background:#00272f}
+
+/* ── a11y widget ── */
+.a11y-fab{position:fixed;top:220px;right:0;z-index:250;background:var(--purple);color:#fff;border:none;border-radius:8px 0 0 8px;width:50px;height:50px;cursor:pointer;box-shadow:-2px 4px 16px rgba(103,45,98,.35);display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.a11y-fab:hover{background:var(--purple-dk)}
+.a11y-panel{position:fixed;top:220px;right:8px;z-index:260;background:#fff;border:1px solid var(--border);border-top:4px solid var(--purple);width:280px;max-width:calc(100vw - 40px);box-shadow:0 16px 40px rgba(36,26,35,.22);display:none;padding:18px}
+.a11y-panel.open{display:block}
+.a11y-panel h4{font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--purple);margin-bottom:14px;font-family:'Inter',sans-serif;font-weight:700}
+.a11y-row{margin-bottom:16px}
+.a11y-row .lbl{font-size:0.8rem;color:var(--tmid);margin-bottom:8px;font-weight:600}
+.a11y-btns{display:flex;gap:6px;flex-wrap:wrap}
+.a11y-btn{border:1.5px solid var(--border);background:#fff;color:var(--text);padding:7px 12px;font-size:0.76rem;font-weight:700;cursor:pointer;border-radius:2px}
+.a11y-btn:hover{border-color:var(--purple)}
+.a11y-btn[aria-pressed="true"]{background:var(--purple);color:#fff;border-color:var(--purple)}
+.a11y-reset{width:100%;text-align:center;padding:9px;font-size:0.78rem;font-weight:700;color:var(--teal);background:none;border:1.5px solid var(--teal);cursor:pointer;margin-top:4px}
+.a11y-reset:hover{background:var(--teal);color:#fff}
+
+/* keyboard-nav mode: strong focus rings everywhere */
+html.a11y-kbdnav *:focus{outline:3px solid var(--dkgreen)!important;outline-offset:2px!important}
+/* readable-font mode */
+html.a11y-readable body{letter-spacing:0.01em;line-height:2}
+html.a11y-readable h1,html.a11y-readable h2,html.a11y-readable h3,html.a11y-readable h4{font-family:'Inter',sans-serif}
+/* contrast themes */
+html[data-theme="dark"] body{background:#15101a;color:#F3EEF3}
+html[data-theme="dark"] .page,html[data-theme="dark"] nav.mainnav,html[data-theme="dark"] .util-bar,html[data-theme="dark"] footer{background:#15101a!important}
+html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4{color:#D9A9D2}
+html[data-theme="dark"] .card,html[data-theme="dark"] .nav-dropdown,html[data-theme="dark"] .mob-menu,html[data-theme="dark"] .lang-modal-box,html[data-theme="dark"] .a11y-panel,html[data-theme="dark"] .quick-card,html[data-theme="dark"] .info-block-bd,html[data-theme="dark"] .obj-item,html[data-theme="dark"] .pow-item,html[data-theme="dark"] .enf-body,html[data-theme="dark"] .comm-card,html[data-theme="dark"] .comm-photo,html[data-theme="dark"] .mandate-band,html[data-theme="dark"] .mstat,html[data-theme="dark"] .util-bar,html[data-theme="dark"] .notice-card,html[data-theme="dark"] .comm-note,html[data-theme="dark"] .enf-lbl,html[data-theme="dark"] .summary-toggle,html[data-theme="dark"] .summary-body,html[data-theme="dark"] .nav-menu-row,html[data-theme="dark"] .action-bar,html[data-theme="dark"] .car-card,html[data-theme="dark"] .car-img{background:#241A28!important;border-color:#453a48!important}
+html[data-theme="dark"] .nav-toplink,html[data-theme="dark"] .tmid,html[data-theme="dark"] .mob-group-hd,html[data-theme="dark"] .nav-dropdown a,html[data-theme="dark"] .mob-menu a,html[data-theme="dark"] p,html[data-theme="dark"] .crumb,html[data-theme="dark"] .kd-txt,html[data-theme="dark"] .rl,html[data-theme="dark"] .lm-native,html[data-theme="dark"] .util-lang{color:#E7DCE6!important}
+html[data-theme="dark"] .footer-col a,html[data-theme="dark"] .footer-brand p,html[data-theme="dark"] .footer-bottom{color:#C9B9C7!important}
+html[data-theme="yellow"] body{background:#000;color:#FFE600}
+html[data-theme="yellow"] .page,html[data-theme="yellow"] nav.mainnav,html[data-theme="yellow"] .util-bar,html[data-theme="yellow"] footer{background:#000!important}
+html[data-theme="yellow"] h1,html[data-theme="yellow"] h2,html[data-theme="yellow"] h3,html[data-theme="yellow"] h4{color:#FFE600}
+html[data-theme="yellow"] a,html[data-theme="yellow"] .tmid{color:#FFE600!important}
+html[data-theme="gray"] body{filter:grayscale(1)}
+
+/* ═══════════ HERO / HOME ═══════════ */
+.hero{position:relative;overflow:hidden;padding:88px 0 76px;border-bottom:1px solid var(--border)}
+.hero .ripple-bg:nth-child(1){width:520px;height:520px;border-width:1px;border-color:var(--purple-lt2);top:-160px;right:-120px}
+.hero .ripple-bg:nth-child(2){width:320px;height:320px;border-width:1px;border-color:var(--purple-lt2);top:40px;right:60px}
+.hero-inner{max-width:680px;position:relative;z-index:1}
+.hero h1{margin-bottom:22px}
+.hero .lead{max-width:560px;margin-bottom:32px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);margin-top:0}
+.quick-card{background:#fff;padding:30px 26px;cursor:pointer;transition:background .15s}
+.quick-card:hover{background:var(--purple-lt)}
+.quick-card .qi{font-size:1.5rem;margin-bottom:12px;display:block}
+.quick-card h4{margin-bottom:8px}
+.quick-card p{font-size:0.88rem;color:var(--tmid);line-height:1.65}
+@media(max-width:800px){.quick-grid{grid-template-columns:1fr}}
+
+.news-list{display:flex;flex-direction:column;margin-top:36px;border-top:1px solid var(--border)}
+.news-row{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:22px 0;border-bottom:1px solid var(--border);cursor:pointer}
+.news-row:hover .news-title{color:var(--teal)}
+.news-title{font-family:'Noto Serif',serif;font-weight:700;font-size:1.15rem;color:var(--purple);margin-bottom:6px;transition:color .15s}
+.news-meta{font-size:0.82rem;color:var(--tlt)}
+.news-tag{flex-shrink:0;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:4px 10px;border-radius:20px;white-space:nowrap}
+
+.mandate-band{background:var(--purple-lt);padding:64px 0;margin-top:0}
+.mandate-inner{display:grid;grid-template-columns:1.3fr 1fr;gap:52px;align-items:center}
+.mandate-inner p{color:var(--tmid);line-height:1.85;margin-bottom:14px}
+.mstats{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border)}
+.mstat{background:#fff;padding:26px 22px;text-align:center}
+.mstat .n{font-family:'Noto Serif',serif;font-size:2.1rem;font-weight:700;color:var(--purple);display:block}
+.mstat .l{font-size:0.72rem;color:var(--tmid);letter-spacing:0.05em;text-transform:uppercase;margin-top:4px}
+@media(max-width:800px){.mandate-inner{grid-template-columns:1fr}}
+
+/* ═══════════ PAGE HERO (inner pages) ═══════════ */
+.crumb{font-size:0.8rem;color:var(--tlt);margin-bottom:18px}
+.crumb a{cursor:pointer;color:var(--tmid);text-decoration:none}
+.crumb a:hover{color:var(--purple);text-decoration:underline}
+.page-hero-plain{padding:56px 0 48px;border-bottom:1px solid var(--border)}
+.page-hero-plain p{max-width:640px}
+
+/* ═══════════ ABOUT CONTENT PATTERNS ═══════════ */
+.about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:60px;align-items:start}
+.about-grid p{color:var(--tmid);line-height:1.9;margin-bottom:18px}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+.info-block{border:1px solid var(--border);margin-bottom:3px}
+.info-block-hd{background:var(--purple);color:#fff;padding:12px 18px;font-size:0.78rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase}
+.info-block-bd{padding:18px;background:var(--purple-lt)}
+.info-block-bd p{font-size:0.9rem;color:var(--tmid);line-height:1.75;margin-bottom:8px}
+.info-block-bd p:last-child{margin-bottom:0}
+
+.key-dates{list-style:none;margin-top:8px}
+.key-dates li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
+.key-dates .kd-date{flex-shrink:0;width:130px;font-weight:700;color:var(--purple);font-size:0.9rem}
+.key-dates .kd-txt{color:var(--tmid);font-size:0.92rem;line-height:1.6}
+
+.lang-btns-row{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 8px}
+.lang-btns-row .btn{padding:10px 20px}
+
+.summary-acc{border:1px solid var(--border);margin-top:24px}
+.summary-toggle{width:100%;background:var(--purple-lt);border:none;padding:14px 20px;text-align:left;font-weight:700;font-size:0.86rem;color:var(--purple);cursor:pointer;display:flex;align-items:center;gap:10px}
+.summary-toggle .sa{margin-left:auto;transition:transform .2s;font-size:0.75rem}
+.summary-toggle.open .sa{transform:rotate(180deg)}
+.summary-body{display:none;padding:20px;border-top:1px solid var(--border)}
+.summary-body.open{display:block}
+.summary-body p{color:var(--tmid);line-height:1.8;margin-bottom:10px;font-size:0.94rem}
+.summary-body ul{margin:6px 0 10px 20px}
+.summary-body li{color:var(--tmid);line-height:1.7;margin-bottom:6px;font-size:0.92rem}
+
+.obj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--border);border:1px solid var(--border);margin-top:20px}
+.obj-item{background:#fff;padding:22px 24px;display:flex;gap:16px}
+.obj-num{font-family:'Noto Serif',serif;font-weight:700;color:var(--teal);font-size:1.5rem;flex-shrink:0;width:34px;line-height:1}
+.obj-item p{color:var(--tmid);font-size:0.92rem;line-height:1.6;margin:0}
+@media(max-width:700px){.obj-grid{grid-template-columns:1fr}}
+
+.pow-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--border);border:1px solid var(--border);margin-top:20px}
+.pow-item{background:#fff;padding:22px 24px}
+.pow-item h4{margin-bottom:6px;font-size:1rem}
+.pow-item p{color:var(--tmid);font-size:0.88rem;line-height:1.6;margin:0}
+@media(max-width:700px){.pow-grid{grid-template-columns:1fr}}
+
+.enf-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--border);border:1px solid var(--border);margin-top:20px}
+.enf-card{display:grid;grid-template-columns:78px 1fr;background:#fff}
+.enf-lbl{background:var(--purple-lt);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 8px;text-align:center}
+.enf-lbl .t{font-family:'Noto Serif',serif;font-weight:700;color:var(--purple);font-size:1.5rem;line-height:1}
+.enf-lbl .u{font-size:0.6rem;color:var(--tmid);text-transform:uppercase;letter-spacing:0.05em;margin-top:3px}
+.enf-body{padding:18px}
+.enf-body h4{font-size:0.88rem;margin-bottom:6px}
+.enf-body p{font-size:0.84rem;color:var(--tmid);line-height:1.6;margin:0}
+.enf-card.span2{grid-column:span 2;grid-template-columns:120px 1fr}
+@media(max-width:700px){.enf-grid{grid-template-columns:1fr}.enf-card.span2{grid-column:span 1}}
+
+.comm-note{background:var(--purple-lt);border-left:4px solid var(--teal);padding:14px 18px;font-size:0.86rem;color:var(--tmid);margin:24px 0}
+.comm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border:1px solid var(--border);margin-top:16px}
+.comm-card{background:#fff}
+.comm-photo{background:var(--purple-lt);height:130px;display:flex;align-items:center;justify-content:center;border-bottom:3px solid var(--purple)}
+.comm-photo svg{width:44px;height:44px}
+.comm-info{padding:16px}
+.comm-info .nm{font-family:'Noto Serif',serif;font-weight:700;font-size:0.98rem;margin-bottom:4px}
+.comm-info .rl{font-size:0.78rem;color:var(--tlt);line-height:1.5}
+.comm-badge{display:inline-block;font-size:0.64rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#fff;background:var(--teal);padding:3px 9px;margin-top:8px}
+@media(max-width:860px){.comm-grid{grid-template-columns:repeat(2,1fr)}}
+
+.tier-list{position:relative;margin-top:32px;padding-left:32px;border-left:2px solid var(--purple-lt2)}
+.tier{position:relative;padding-bottom:34px}
+.tier:last-child{padding-bottom:0}
+.tier::before{content:'';position:absolute;left:-38px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--purple);border:3px solid var(--purple-lt)}
+.tier h4{margin-bottom:6px}
+.tier p{color:var(--tmid);font-size:0.92rem;line-height:1.7;max-width:600px}
+
+.notice-card{border:2px dashed var(--border);background:var(--purple-lt);padding:40px 32px;text-align:center;margin-top:28px}
+.notice-card .ni{font-size:2rem;margin-bottom:14px;display:block}
+.notice-card h3{margin-bottom:10px}
+.notice-card p{color:var(--tmid);max-width:480px;margin:0 auto;line-height:1.75;font-size:0.94rem}
+
+.contact-row{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.contact-icon{width:44px;height:44px;background:var(--purple-lt);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.contact-lbl{font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--tlt);margin-bottom:5px}
+.contact-val{font-size:1.02rem;color:var(--text);line-height:1.6}
+.contact-val a{color:var(--purple);text-decoration:none}
+.contact-val a:hover{text-decoration:underline}
+
+.stub-wrap{max-width:560px;margin:0 auto;text-align:center;padding:60px 0}
+.stub-wrap .si{font-size:2.2rem;margin-bottom:18px;display:block}
+.stub-wrap p{color:var(--tmid);line-height:1.85;margin-bottom:26px}
+
+/* ═══════════ FOOTER ═══════════ */
+footer{background:var(--purple-lt);border-top:1px solid var(--border);padding:56px 0 28px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.footer-brand{display:flex;gap:12px}
+.footer-brand svg{width:36px;height:36px;flex-shrink:0}
+.footer-brand p{color:var(--tmid);font-size:0.88rem;line-height:1.7;margin-top:10px;max-width:300px}
+.footer-brand .fen{font-family:'Noto Serif',serif;font-weight:700;color:var(--purple);font-size:1rem}
+.footer-col h5{font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--tlt);margin-bottom:14px}
+.footer-col a{display:block;font-size:0.88rem;color:var(--tmid);text-decoration:none;margin-bottom:9px;cursor:pointer}
+.footer-col a:hover{color:var(--purple)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:0.8rem;color:var(--tlt)}
+@media(max-width:800px){.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.footer-inner{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-<!-- FLOATING COMPLAINT BUTTON -->
-<button class="fab-complaint" onclick="go('contact')">
-  <span class="fab-icon">📋</span> Make a Complaint
-</button>
-
-<!-- PDF MODAL -->
-<div id="pdf-modal" class="pdf-modal" onclick="closePDFOutside(event)">
-  <div class="pdf-modal-box">
-    <div class="pdf-modal-header">
-      <div class="pdf-modal-header-left"><span>📄</span><div class="pdf-modal-title" id="pdf-modal-title">Document</div></div>
-      <div class="pdf-modal-actions">
-        <a class="pdf-modal-download" id="pdf-modal-download" href="#" download>⬇ Download</a>
-        <button class="pdf-modal-close" onclick="closePDF()">✕</button>
+<!-- ═══════════ GATEWAY ═══════════ -->
+<div id="page-gateway" class="page active">
+  <div class="gw-wrap">
+    <div class="ripple-bg" aria-hidden="true"></div>
+    <div class="ripple-bg" aria-hidden="true"></div>
+    <div class="gw-mark">
+      <svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="27" cy="31" r="22" stroke-dasharray="120 30"/><circle cx="27" cy="31" r="15" stroke-dasharray="80 25"/><circle cx="27" cy="31" r="8" stroke-dasharray="45 15"/></g></svg>
+      <div class="gw-si">ජාතික කාන්තා කොමිෂන් සභාව</div>
+      <div class="gw-ta">தேசிய பெண்கள் ஆணைக்குழு</div>
+      <div class="gw-en">National Commission on Women — Sri Lanka</div>
+    </div>
+    <div class="gw-langs">
+      <div class="gw-card si" onclick="chooseLang('si')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('si')">
+        <div class="gw-greet">ආයුබෝවන්</div>
+        <div class="gw-sub si">සිංහලෙන් බලන්න</div>
+        <span class="btn btn-outline btn-sm">Enter in Sinhala</span>
       </div>
-    </div>
-    <iframe id="pdf-modal-frame" src="" title="PDF Viewer"></iframe>
-  </div>
-</div>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-main">
-    <a class="nav-brand" onclick="go('home')">
-      <div class="nav-logo"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.61 1.41 4.89 3.5 6.19V17h7v-1.81C17.59 13.89 19 11.61 19 9c0-3.87-3.13-7-7-7zm-1 14v1h2v-1h-2zm4.5-3.03A5.007 5.007 0 0117 9c0-2.76-2.24-5-5-5S7 6.24 7 9c0 1.8.95 3.38 2.5 4.28V15h5v-1.72l-.5-.31z"/></svg></div>
-      <div class="nav-brand-text"><div class="org">National Commission on Women</div><div class="country">Sri Lanka · ncwsrilanka.org</div></div>
-    </a>
-    <div class="nav-links">
-      <a id="nav-home" class="active" onclick="go('home')">Home</a>
-      <a id="nav-about" onclick="go('about')">About Us</a>
-      <a id="nav-legal" onclick="go('legal')">Acts &amp; Laws</a>
-      <a id="nav-docs" onclick="go('docs')">Resources</a>
-      <a id="nav-contact" onclick="go('contact')">Contact</a>
-    </div>
-    <button class="nav-complaint" onclick="go('contact')">📋 Make a Complaint</button>
-    <button class="nav-hamburger" onclick="toggleMob()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="nav-mob-menu" id="mob-menu">
-    <a onclick="go('home');toggleMob()">Home</a>
-    <a onclick="go('about');toggleMob()">About Us</a>
-    <a onclick="go('legal');toggleMob()">Acts &amp; Laws</a>
-    <a onclick="go('docs');toggleMob()">Resources</a>
-    <a onclick="go('downloads');toggleMob()">Downloads &amp; Forms</a>
-    <a onclick="go('decisions');toggleMob()">Decisions</a>
-    <a onclick="go('schedule');toggleMob()">Schedule</a>
-    <a onclick="go('careers');toggleMob()">Careers</a>
-    <a onclick="go('faq');toggleMob()">FAQ</a>
-    <a onclick="go('contact');toggleMob()">Contact</a>
-    <a class="mob-complaint" onclick="go('contact');toggleMob()">📋 Make a Complaint</a>
-  </div>
-</nav>
-
-<!-- ═══════════════════════ HOME ═══════════════════════ -->
-<div id="page-home" class="page active">
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-tag">Established under the Women Empowerment Act No. 37 of 2024</div>
-      <h1>Protecting the Rights of <em>Every Woman</em> in Sri Lanka</h1>
-      <p class="hero-lead">The National Commission on Women is an independent body set up by law to protect, promote, and advance the rights of all women in Sri Lanka.</p>
-    </div>
-  </section>
-
-  <div class="quote-strip"><div class="quote-strip-inner"><blockquote>"Every woman shall be entitled to women's rights and no woman shall be denied of such rights."</blockquote><cite>Section 3 — Women Empowerment Act No. 37 of 2024</cite></div></div>
-  <div class="stats-bar"><div class="stats-inner"><div class="stat-item"><span class="number">2024</span><span class="label">Year Established</span></div><div class="stat-item"><span class="number">7</span><span class="label">Commissioners</span></div><div class="stat-item"><span class="number">Sep 2025</span><span class="label">Commissioners Appointed</span></div><div class="stat-item"><span class="number">Act No. 37</span><span class="label">Women Empowerment Act</span></div><div class="stat-item"><span class="number">CEDAW</span><span class="label">Convention Monitored</span></div></div></div>
-
-  <!-- WHAT CAN WE HELP WITH -->
-  <section class="section" style="background:#fff">
-    <div class="container">
-      <div style="text-align:center"><span class="eyebrow">What We Can Help With</span><h2>What kinds of problems can the NCW help with?</h2><p style="color:var(--tmid);font-size:1rem;margin-top:14px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.85">The NCW can look into any situation where a woman's rights have been violated or are at risk of being violated.</p></div>
-      <div class="violations-grid">
-        <div class="viol-card"><span class="viol-icon">🏠</span><h4>Violence at Home</h4><p>Domestic violence, physical abuse, or threats by a family member or partner. The NCW works alongside the Prevention of Domestic Violence Act.</p></div>
-        <div class="viol-card"><span class="viol-icon">💼</span><h4>Workplace Problems</h4><p>Sexual harassment, unfair dismissal, unequal pay, or discrimination at your place of work.</p></div>
-        <div class="viol-card"><span class="viol-icon">⚖️</span><h4>Discrimination</h4><p>Being treated unfairly because you are a woman — in accessing services, education, housing, or justice.</p></div>
-        <div class="viol-card"><span class="viol-icon">🔒</span><h4>Sexual Violence</h4><p>Rape, sexual assault, or any form of sexual violence. The NCW can refer you to the right support and investigate institutional failures.</p></div>
-        <div class="viol-card"><span class="viol-icon">🏛️</span><h4>Rights Denied by Institutions</h4><p>When a government body, school, hospital, or any institution fails to protect or respect your rights as a woman.</p></div>
-        <div class="viol-card"><span class="viol-icon">💰</span><h4>Property &amp; Economic Rights</h4><p>Denial of inheritance rights, property, or equal economic opportunity on the basis of gender.</p></div>
+      <div class="gw-card en" onclick="chooseLang('en')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('en')">
+        <div class="gw-greet">Welcome</div>
+        <div class="gw-sub">View in English</div>
+        <span class="btn btn-purple btn-sm">Enter in English</span>
       </div>
-    </div>
-  </section>
-
-  <!-- WHO CAN REACH OUT -->
-  <div class="who-band">
-    <div class="who-inner">
-      <div class="who-text">
-        <span class="eyebrow">Who Can Contact Us</span>
-        <h2>Who can reach the NCW?</h2>
-        <p>You do not need a lawyer or official document to contact the NCW. Anyone can reach out — in English, Sinhala, or Tamil.</p>
-        <p>The NCW can also start an investigation on its own if it learns of a rights violation, even without a complaint being made.</p>
-        <button class="btn btn-dk" onclick="go('contact')" style="margin-top:8px">📋 Contact the NCW</button>
-      </div>
-      <div class="who-boxes">
-        <div class="who-box"><span class="wi">👩</span><div><strong>Any woman whose rights have been violated</strong><p>You can contact the NCW directly, in person, by post, or by email.</p></div></div>
-        <div class="who-box"><span class="wi">👪</span><div><strong>A family member or friend acting on her behalf</strong><p>If the woman herself cannot make the complaint, someone else can do so for her.</p></div></div>
-        <div class="who-box"><span class="wi">🏢</span><div><strong>An organisation or civil society group</strong><p>NGOs, women's groups, and community organisations can submit complaints on behalf of affected women.</p></div></div>
-        <div class="who-box"><span class="wi">🔍</span><div><strong>No one — the NCW itself</strong><p>The Commission can investigate on its own initiative if it becomes aware of a violation.</p></div></div>
+      <div class="gw-card ta" onclick="chooseLang('ta')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('ta')">
+        <div class="gw-greet">வணக்கம்</div>
+        <div class="gw-sub ta">தமிழில் பார்க்கவும்</div>
+        <span class="btn btn-outline btn-sm">Enter in Tamil</span>
       </div>
     </div>
   </div>
-
-  <!-- HOW WE HELP -->
-  <section class="section" style="background:#fff">
-    <div class="container">
-      <div style="text-align:center"><span class="eyebrow">How We Can Help</span><h2>What the NCW Does</h2><p style="color:var(--tmid);font-size:1rem;margin-top:14px;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.85">Four main ways the NCW protects and supports women across Sri Lanka.</p></div>
-      <div class="how-grid">
-        <div class="how-item"><span class="how-icon">🔍</span><h4>Investigate</h4><p>We look into complaints about rights violations — whether reported by individuals, organisations, or identified by the Commission itself.</p></div>
-        <div class="how-item"><span class="how-icon">🤝</span><h4>Mediate</h4><p>We help resolve disputes fairly, bringing both parties together through a trained mediation panel — without going to court.</p></div>
-        <div class="how-item"><span class="how-icon">📋</span><h4>Shape Policy</h4><p>We advise the Government on laws and policies that affect women, and monitor whether they are being carried out.</p></div>
-        <div class="how-item"><span class="how-icon">📢</span><h4>Speak Out</h4><p>We issue public statements and engage with Parliament, civil society, and the media on issues affecting women's rights.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LATEST PUBLICATIONS -->
-  <section class="section" style="background:var(--cream);padding-top:0">
-    <div class="container">
-      <span class="eyebrow">Latest Publications</span><h2>Statements &amp; Submissions</h2>
-      <div class="latest-grid">
-        <div class="doc-card" onclick="go('docs')"><div class="doc-card-bar t1"></div><div class="doc-card-body"><span class="doc-tag">Statement</span><h4>International Women's Day Statement 2026</h4><p>The NCW reaffirms its commitment to protecting and promoting women's rights and outlines key functions for 2026.</p><div class="doc-card-footer">📅 8 March 2026 · English · Sinhala · Tamil</div></div></div>
-        <div class="doc-card" onclick="go('docs')"><div class="doc-card-bar t2"></div><div class="doc-card-body"><span class="doc-tag">Submission</span><h4>MMDA Reform Submission to Parliament</h4><p>The NCW's formal submission to the Parliamentary process on the reform of the Muslim Marriage and Divorce Act.</p><div class="doc-card-footer">📅 2026 · PDF available</div></div></div>
-        <div class="doc-card" onclick="go('docs')"><div class="doc-card-bar p3"></div><div class="doc-card-body"><span class="doc-tag">Report</span><h4>CEDAW Concluding Observations 2025</h4><p>The UN CEDAW Committee's concluding observations on Sri Lanka's ninth periodic report, February 2025.</p><div class="doc-card-footer">📅 February 2025 · PDF available</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CORE FUNCTIONS -->
-  <section class="section" style="background:var(--purple7)">
-    <div class="container">
-      <div style="text-align:center"><span class="eyebrow">Core Functions</span><h2>The NCW's Core Functions</h2></div>
-      <div class="pillars-grid">
-        <div class="pillar"><span class="pillar-icon">⚖️</span><h3>Protect Rights</h3><p>Investigate rights violations, settle disputes through mediation, and check that the law is being followed by both government bodies and private organisations.</p></div>
-        <div class="pillar"><span class="pillar-icon">📚</span><h3>Promote Equality</h3><p>Run awareness programmes, carry out research, review the impact of new laws on women, and issue public statements on important issues.</p></div>
-        <div class="pillar"><span class="pillar-icon">🗺️</span><h3>Shape Policy</h3><p>Develop the National Policy on women's empowerment and advise the Government on bringing local law in line with international standards.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT BAND -->
-  <div class="about-band"><div class="about-band-inner"><div><span class="eyebrow">About the NCW</span><h2>An Independent Commission for All Women in Sri Lanka</h2><p>The NCW was created after decades of work by women's rights groups across Sri Lanka.</p><p>Established under the Women Empowerment Act No. 37 of 2024, seven Commissioners were appointed by H.E. the President in September 2025.</p><a class="btn btn-terra" onclick="go('about')" style="margin-top:16px">Read More About the NCW →</a></div><div class="about-stats"><div class="about-stat"><span class="num">7</span><span class="lbl">Independent Commissioners</span></div><div class="about-stat"><span class="num">2024</span><span class="lbl">Act Certified July 2024</span></div><div class="about-stat"><span class="num">CEDAW</span><span class="lbl">International Standards Upheld</span></div><div class="about-stat"><span class="num">4 yrs</span><span class="lbl">Commissioner Term of Office</span></div></div></div></div>
-
-  <!-- KEY ACTS -->
-  <section class="section" style="background:#fff"><div class="container"><span class="eyebrow">Key Acts &amp; Laws</span><h2>The Laws Behind the NCW</h2><p style="color:var(--tmid);margin-top:12px;max-width:580px;font-size:0.95rem;line-height:1.8">The NCW operates under national laws and international agreements that define the rights of women in Sri Lanka.</p><div class="instruments-row"><div class="chip chip-nat" onclick="go('legal')"><span class="ci">📜</span><div class="ct"><div class="tt">Women Empowerment Act No. 37 of 2024</div><div class="ss">National · Establishes the NCW</div></div></div><div class="chip chip-nat" onclick="go('legal')"><span class="ci">🛡️</span><div class="ct"><div class="tt">Prevention of Domestic Violence Act</div><div class="ss">National Law</div></div></div><div class="chip chip-intl" onclick="go('legal')"><span class="ci">🌍</span><div class="ct"><div class="tt">CEDAW Convention</div><div class="ss">International · UN Treaty</div></div></div><div class="chip chip-nat" onclick="go('legal')"><span class="ci">📋</span><div class="ct"><div class="tt">National Policy on Women</div><div class="ss">National Policy Framework</div></div></div></div></div></section>
-
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024 to protect and promote women's rights across Sri Lanka.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads &amp; Forms</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a><a onclick="go('careers')">Careers</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a><a onclick="go('legal')">Domestic Violence Act</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
 </div>
 
-<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
-<div id="page-about" class="page">
-  <div class="about-hero">
-    <div class="about-hero-left">
-      <span class="eyebrow">About the NCW</span>
-      <h1>Sri Lanka's <em>Independent</em> Women's Commission</h1>
-      <p>Established under the Women Empowerment Act No. 37 of 2024 — a body dedicated to protecting and promoting the rights of all women across Sri Lanka.</p>
-    </div>
-    <div class="about-hero-right">
-      <h3>The Commission at a Glance</h3>
-      <div class="about-key-stat"><span class="aks-num">7</span><span class="aks-label">Independent Commissioners appointed September 2025</span></div>
-      <div class="about-key-stat"><span class="aks-num">4</span><span class="aks-label">Year term of office per Commissioner</span></div>
-      <div class="about-key-stat"><span class="aks-num">14</span><span class="aks-label">Days to respond to any complaint received</span></div>
-      <div class="about-key-stat"><span class="aks-num">60</span><span class="aks-label">Day limit for mediation to be concluded</span></div>
+<!-- language-not-ready modal -->
+<div id="lang-modal" class="lang-modal">
+  <div class="lang-modal-box">
+    <h3>This language is still being prepared</h3>
+    <p class="lm-native" id="lm-native-msg"></p>
+    <p>We are sorry for the inconvenience. This section of the site is not yet available in the language you selected. You may continue in English, or go back and choose another language.</p>
+    <div class="lang-modal-actions">
+      <button class="btn btn-outline btn-sm" onclick="closeLangModal()">Go Back</button>
+      <button class="btn btn-purple btn-sm" onclick="proceedInEnglish()">Continue in English</button>
     </div>
   </div>
-  <section class="section mandate-section"><div class="container"><div class="mandate-grid"><div class="mandate-text"><span class="eyebrow">Our Mandate</span><h2>Set Up to Protect and Promote Women's Rights</h2><p>The NCW is established under the Women Empowerment Act No. 37 of 2024. The seven Commissioners were appointed by H.E. the President Anura Kumara Dissanayake in September 2025, based on the recommendations of the Constitutional Council and the Women Parliamentarians' Caucus.</p><p>As an independent body, the Commission oversees the Ministry of Women and Child Affairs and monitors how the National Policy on Gender Equality and Women's Empowerment is being carried out.</p><p>The Women Empowerment Act makes a clear promise: <em>"every woman shall be entitled to women's rights and no woman shall be denied of such rights"</em> (Section 3). The NCW exists to make this a reality.</p><p>We recognise, with deep appreciation, that the Women Empowerment Act of 2024 and the NCW are the result of decades of work by women's rights groups and organisations across Sri Lanka.</p></div><div><div class="info-block terra"><div class="info-block-hdr"><span>📜</span><h4>Legal Basis</h4></div><div class="info-block-body"><p>The NCW is established under the Women Empowerment Act No. 37 of 2024, certified on 2 July 2024 and published in the Government Gazette.</p></div></div><div class="info-block"><div class="info-block-hdr"><span>👥</span><h4>Appointment of Commissioners</h4></div><div class="info-block-body"><p>Seven Commissioners were appointed in September 2025 — five on the recommendation of the Constitutional Council and two on the recommendation of the Women Parliamentarians' Caucus.</p><p>At least five members, including the Chairperson, must be women. Commissioners serve four-year terms and must have expertise in law, trade unionism, management, health, education, or women's empowerment.</p></div></div><div class="info-block"><div class="info-block-hdr"><span>🏛️</span><h4>The Ombuds</h4></div><div class="info-block-body"><p>The Act provides for an Ombuds, who can receive complaints about gender-based violence or rights violations and forward recommendations to the Commission.</p></div></div><div class="info-block terra"><div class="info-block-hdr"><span>💰</span><h4>National Fund for Women</h4></div><div class="info-block-body"><p>The Act establishes a National Fund for Women, managed by the Commission. The Fund receives money from Parliament and can accept donations from local and international sources.</p></div></div></div></div></div></section>
-  <section class="section objectives-section"><div class="container"><span class="eyebrow">Objectives of the Act</span><h2>What the Women Empowerment Act Sets Out to Achieve</h2><p style="color:rgba(255,255,255,0.5);font-size:0.96rem;margin-bottom:0">Ten goals set out in the Women Empowerment Act No. 37 of 2024</p><div class="obj-grid"><div class="obj-item"><span class="obj-num">01</span><p>Introduce ways to protect women's rights under the Constitution</p></div><div class="obj-item"><span class="obj-num">02</span><p>Carry out Sri Lanka's obligations under CEDAW and related laws</p></div><div class="obj-item"><span class="obj-num">03</span><p>Create a national policy for the advancement and empowerment of women</p></div><div class="obj-item"><span class="obj-num">04</span><p>Protect women from discrimination based on gender and sexual orientation</p></div><div class="obj-item"><span class="obj-num">05</span><p>Prevent harassment, marginalisation, sexual harassment, and violence against women</p></div><div class="obj-item"><span class="obj-num">06</span><p>Recommend law reforms to stop discrimination and support women's empowerment</p></div><div class="obj-item"><span class="obj-num">07</span><p>Support women's participation in justice and equal representation in decision-making</p></div><div class="obj-item"><span class="obj-num">08</span><p>Ensure women's economic empowerment, with special attention to women with disabilities</p></div><div class="obj-item"><span class="obj-num">09</span><p>Run public education programmes on all aspects of women's empowerment</p></div><div class="obj-item"><span class="obj-num">10</span><p>Promote equal pay for equal work</p></div></div></div></section>
-  <section class="section powers-section"><div class="container"><span class="eyebrow">Powers of the Commission · Section 6</span><h2>What the NCW Can Do</h2><p style="color:var(--tmid);margin-top:12px;font-size:0.96rem;line-height:1.8;max-width:600px">The Commission has broad powers to protect and promote women's rights across Sri Lanka.</p><div class="powers-grid"><div class="power-card"><div class="power-icon">🔍</div><div><h4>Investigate Violations</h4><p>Look into rights violations — on its own initiative or when a complaint is received</p></div></div><div class="power-card"><div class="power-icon">⚖️</div><div><h4>Go to Court</h4><p>Intervene in court cases about women's rights and take action in any competent court</p></div></div><div class="power-card"><div class="power-icon">🤝</div><div><h4>Mediation</h4><p>Send cases to a trained mediation panel — either on complaint or on its own motion</p></div></div><div class="power-card"><div class="power-icon">📊</div><div><h4>Monitor Compliance</h4><p>Check that private bodies and government institutions are upholding women's rights</p></div></div><div class="power-card"><div class="power-icon">📋</div><div><h4>Policy Formulation</h4><p>Develop the National Policy on women's advancement and empowerment</p></div></div><div class="power-card"><div class="power-icon">💬</div><div><h4>Recommend Law Changes</h4><p>Advise the Government on updating laws to meet international standards</p></div></div><div class="power-card"><div class="power-icon">🏢</div><div><h4>Regional Offices</h4><p>Open offices in provinces and regions across Sri Lanka for easier access</p></div></div><div class="power-card"><div class="power-icon">💰</div><div><h4>Award Compensation</h4><p>Award compensation to complainants for reasonable costs incurred in making a complaint</p></div></div></div></div></section>
-  <section class="section enforcement-section"><div class="container"><span class="eyebrow">Inquiry &amp; Enforcement · Part II</span><h2>Key Timelines &amp; Steps</h2><p style="color:var(--tmid);margin-top:12px;font-size:0.96rem;line-height:1.8;max-width:600px">The Act sets clear deadlines for complaints, investigations, mediation, and appeals.</p><div class="enf-grid"><div class="enf-card"><div class="enf-label"><span class="enf-time">Own</span><span class="enf-unit">Motion</span></div><div class="enf-body"><h4>Own-Motion Investigations</h4><p>The Commission may investigate any rights violation on its own — without waiting for a complaint. Must be concluded within one month (Section 18).</p></div></div><div class="enf-card"><div class="enf-label"><span class="enf-time">14</span><span class="enf-unit">Days</span></div><div class="enf-body"><h4>Response to Complaints</h4><p>Any affected woman, or someone acting for her, may submit a complaint. The NCW must inform the complainant of the action taken within 14 days (Section 19).</p></div></div><div class="enf-card"><div class="enf-label"><span class="enf-time">60</span><span class="enf-unit">Days</span></div><div class="enf-body"><h4>Mediation</h4><p>Cases may be sent to a trained mediation panel. Mediation must be completed within 60 days of referral (Section 20).</p></div></div><div class="enf-card"><div class="enf-label"><span class="enf-time">1</span><span class="enf-unit">Month</span></div><div class="enf-body"><h4>Right of Appeal</h4><p>If you disagree with the NCW's decision, you may appeal to the Court of Appeal within one month (Section 26).</p></div></div><div class="enf-card" style="grid-column:span 2"><div class="enf-label"><span class="enf-time">SC</span><span class="enf-unit">Referral</span></div><div class="enf-body"><h4>Supreme Court References</h4><p>The Commission receives references from the Supreme Court on women's rights matters under Article 126 of the Constitution. It may also refer questions on the scope of women's rights to the Supreme Court during an inquiry (Section 17).</p></div></div></div></div></section>
-  <section class="section values-section"><div class="container"><span class="eyebrow">Our Values</span><h2>What Guides Us</h2><div class="values-grid"><div class="value-card"><span class="value-icon">⚖️</span><h4>Independence</h4><p>We operate as a fully independent commission, free from political interference.</p></div><div class="value-card"><span class="value-icon">🤝</span><h4>Equality</h4><p>We uphold equal rights, dignity and justice for all women in Sri Lanka.</p></div><div class="value-card"><span class="value-icon">🔍</span><h4>Accountability</h4><p>We hold government and non-government bodies accountable to women's rights.</p></div><div class="value-card"><span class="value-icon">🌺</span><h4>Inclusivity</h4><p>We serve all women across all communities, regions, and backgrounds.</p></div></div></div></section>
-  <section class="section comm-section"><div class="container"><span class="eyebrow">Leadership</span><h2>The Commissioners</h2><p style="color:var(--tmid);margin-top:10px;font-size:0.95rem">Seven Commissioners appointed in September 2025 by H.E. the President.</p><p style="color:var(--terra);font-size:0.80rem;background:var(--terra4);display:inline-block;padding:6px 14px;margin-top:10px;margin-bottom:4px;font-weight:600">⚠ Commissioner names and photos to be added before launch.</p><div class="commissioners-grid"><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div><span class="comm-badge">Acting Chairperson</span></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div><div class="comm-card"><div class="comm-photo">👤</div><div class="comm-info"><div class="name">[Commissioner Name]</div><div class="role">[Designation / Expertise]</div></div></div></div></div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a><a onclick="go('careers')">Careers</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
 </div>
 
-<!-- ═══════════════════════ ACTS & LAWS ═══════════════════════ -->
-<div id="page-legal" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Acts &amp; Laws</span><h1>Acts &amp; Laws</h1><p>The national laws and international agreements that define the rights of women in Sri Lanka and set out the NCW's mandate.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <div class="legal-group-hdr"><span style="font-size:1.8rem">⚖️</span><div><div style="font-size:0.70rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--terra);margin-bottom:4px">National Laws</div><h2>Sri Lanka National Laws</h2></div></div>
-    <div class="we-act-hero">
-      <span class="tag">The Main Law</span>
-      <h2>Women Empowerment Act No. 37 of 2024</h2>
-      <p>The law that creates the National Commission on Women and sets out its powers and duties. Certified on 2 July 2024.</p>
-      <div class="lang-btns">
-        <a class="lang-btn" onclick="openPDF('static/files/we-act-english.pdf','Women Empowerment Act — English')">📄 View — English</a>
-        <a class="lang-btn" onclick="openPDF('static/files/we-act-sinhala.pdf','Women Empowerment Act — Sinhala')">📄 බලන්න — Sinhala</a>
-        <a class="lang-btn" onclick="openPDF('static/files/we-act-tamil.pdf','Women Empowerment Act — Tamil')">📄 பார்க்கவும் — Tamil</a>
-      </div>
-    </div>
-    <!-- PLAIN LANGUAGE SUMMARY -->
-    <div class="act-summary">
-      <button class="act-summary-toggle" onclick="toggleSummary(this)">
-        <span class="ast-icon">💡</span> Plain Language Summary — What does this Act mean for you?
-        <span class="ast-arrow">▼</span>
-      </button>
-      <div class="act-summary-body">
-        <span class="act-summary-label">Simple Explanation</span>
-        <p>This is the law that created the National Commission on Women (NCW). It came into effect in July 2024.</p>
-        <p><strong>What does it say?</strong></p>
-        <ul>
-          <li>Every woman in Sri Lanka has rights that cannot be taken away from her.</li>
-          <li>A commission of seven independent people has been set up to protect those rights.</li>
-          <li>You can make a complaint to the NCW if your rights have been violated — for free, without a lawyer.</li>
-          <li>The NCW must respond to your complaint within 14 days.</li>
-          <li>If your case goes to mediation, it must be resolved within 60 days.</li>
-          <li>If you are not happy with the decision, you can appeal to the Court of Appeal within one month.</li>
-          <li>The NCW can also investigate problems on its own — you do not have to make a complaint first.</li>
-        </ul>
-        <p>The Act also requires the Government to create a National Policy to advance women's rights, and sets up a National Fund for Women to support this work.</p>
-      </div>
-    </div>
+<!-- ═══════════ MAIN SITE ═══════════ -->
+<div id="page-site">
 
-    <div style="height:32px"></div>
-    <div class="legal-cards">
-      <div class="legal-card">
-        <div class="legal-card-top"><div class="lct">National Law</div><h3>Prevention of Domestic Violence Act</h3><p class="desc">The main law dealing with domestic violence against women in Sri Lanka. It provides legal protection and remedies for women who have experienced abuse at home.</p></div>
-        <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">View Act</a></div>
-      </div>
-      <div class="legal-card">
-        <div class="legal-card-top"><div class="lct">National Policy</div><h3>National Policy on Women</h3><p class="desc">The national policy that guides the Government's work to advance and empower women in Sri Lanka. The NCW is responsible for developing and reviewing this policy.</p></div>
-        <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">View Policy</a></div>
-      </div>
+  <div class="util-bar">
+    <div class="util-inner">
+      <button class="util-lang" data-lang="si" onclick="switchLangFromSite('si')">සිංහල</button>
+      <button class="util-lang active" data-lang="en" onclick="switchLangFromSite('en')">English</button>
+      <button class="util-lang" data-lang="ta" onclick="switchLangFromSite('ta')">தமிழ்</button>
     </div>
-    <!-- DVPA summary -->
-    <div class="act-summary" style="border-top:2px solid var(--border);margin-top:0">
-      <button class="act-summary-toggle" onclick="toggleSummary(this)">
-        <span class="ast-icon">💡</span> Plain Language Summary — Prevention of Domestic Violence Act
-        <span class="ast-arrow">▼</span>
-      </button>
-      <div class="act-summary-body">
-        <span class="act-summary-label">Simple Explanation</span>
-        <p>This law protects women from violence in their homes — including physical, sexual, psychological, and economic abuse by a family member or partner.</p>
-        <ul>
-          <li>You can go to a Magistrate's Court to get a Protection Order to stop the violence.</li>
-          <li>The order can be issued quickly, even on the same day in urgent cases.</li>
-          <li>Breaking a Protection Order is a criminal offence and can result in arrest.</li>
-          <li>You can also ask for an Occupation Order — which means the abuser may have to leave the home.</li>
-        </ul>
-        <p>The NCW works alongside this law to support women who have experienced domestic violence.</p>
-      </div>
-    </div>
-  </div></section>
-
-  <section class="section" style="background:var(--purple7)"><div class="container">
-    <div class="legal-group-hdr"><span style="font-size:1.8rem">🌐</span><div><div style="font-size:0.70rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--terra);margin-bottom:4px">International Agreements</div><h2>International Instruments</h2></div></div>
-    <div class="legal-cards">
-      <div class="legal-card">
-        <div class="legal-card-top"><div class="lct">UN Treaty · Ratified by Sri Lanka</div><h3>CEDAW Convention</h3><p class="desc">The international agreement on ending all forms of discrimination against women. Sri Lanka submitted its ninth report to the UN CEDAW Committee in 2025.</p></div>
-        <div class="legal-card-foot"><button class="btn btn-sm btn-md" onclick="openPDF('static/files/cedaw.pdf','CEDAW Convention')">📄 View CEDAW</button><button class="btn btn-sm btn-ol" onclick="openPDF('static/files/cedaw-concluding-obs-2025.pdf','CEDAW Concluding Observations 2025')">Concluding Obs. 2025</button></div>
-      </div>
-      <div class="legal-card">
-        <div class="legal-card-top"><div class="lct">Optional Protocol · UN Treaty</div><h3>Optional Protocol to CEDAW</h3><p class="desc">Allows individuals and groups to bring complaints to the UN CEDAW Committee after exhausting local remedies. The NCW monitors Sri Lanka's status under this protocol.</p></div>
-        <div class="legal-card-foot"><a class="btn btn-sm btn-ol" href="#">Learn More</a></div>
-      </div>
-    </div>
-    <div class="act-summary" style="border-top:2px solid var(--border);margin-top:0">
-      <button class="act-summary-toggle" onclick="toggleSummary(this)">
-        <span class="ast-icon">💡</span> Plain Language Summary — What is CEDAW?
-        <span class="ast-arrow">▼</span>
-      </button>
-      <div class="act-summary-body">
-        <span class="act-summary-label">Simple Explanation</span>
-        <p>CEDAW stands for the Convention on the Elimination of All Forms of Discrimination Against Women. It is an international agreement adopted by the United Nations in 1979 — sometimes called the "international bill of rights for women."</p>
-        <ul>
-          <li>Sri Lanka ratified (signed and agreed to) CEDAW in 1981.</li>
-          <li>This means Sri Lanka is legally required to take steps to end discrimination against women.</li>
-          <li>Every few years, Sri Lanka must report to the UN on what it has done. The UN then issues recommendations.</li>
-          <li>The NCW is responsible for monitoring how Sri Lanka is meeting its CEDAW obligations.</li>
-        </ul>
-      </div>
-    </div>
-  </div></section>
-
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
-
-<!-- ═══════════════════════ RESOURCES ═══════════════════════ -->
-<div id="page-docs" class="page">
-  <div class="page-hero" style="padding:52px 0 44px"><div class="container"><span class="eyebrow">NCW Publications</span><h1>Resources</h1><p>Statements, submissions, reports, press releases, and gallery from the National Commission on Women.</p></div></div>
-  <div class="docs-layout">
-    <aside class="docs-sidebar">
-      <div class="sidebar-box"><h5>Filter by Type</h5><div class="sidebar-filter">
-        <button class="filter-btn active" onclick="fType('all',this)"><span class="fdot"></span>All Resources</button>
-        <button class="filter-btn" onclick="fType('statement',this)"><span class="fdot"></span>Statements</button>
-        <button class="filter-btn" onclick="fType('submission',this)"><span class="fdot"></span>Submissions</button>
-        <button class="filter-btn" onclick="fType('report',this)"><span class="fdot"></span>Reports</button>
-        <button class="filter-btn" onclick="fType('press',this)"><span class="fdot" style="background:var(--purple3)"></span>Press Releases</button>
-        <button class="filter-btn" onclick="fType('gallery',this)"><span class="fdot" style="background:var(--gold)"></span>Gallery</button>
-      </div></div>
-      <div class="sidebar-box"><h5>Filter by Year</h5><div class="sidebar-filter">
-        <button class="filter-btn active" onclick="fYear('all',this)">All Years</button>
-        <button class="filter-btn" onclick="fYear('2026',this)">2026</button>
-        <button class="filter-btn" onclick="fYear('2025',this)">2025</button>
-      </div></div>
-    </aside>
-    <main>
-      <div class="docs-search"><span class="si">🔍</span><input type="text" placeholder="Search resources…" oninput="fSearch(this.value)"></div>
-      <div class="docs-list" id="docs-list">
-        <!-- Statements / Submissions / Reports -->
-        <div class="doc-row" data-type="statement" data-year="2026"><div class="drbar p1"></div><div class="drb"><div class="title">International Women's Day Statement 2026</div><div class="meta"><span>📅 8 March 2026</span><span>Statement</span><span>English · Sinhala · Tamil</span></div></div><button class="btn btn-sm btn-dk" onclick="openPDF('static/files/iwd-statement-2026-en.pdf','IWD Statement 2026')">📄 View</button></div>
-        <div class="doc-row" data-type="submission" data-year="2026"><div class="drbar p2"></div><div class="drb"><div class="title">MMDA Reform — NCW Submission to Parliament</div><div class="meta"><span>📅 2026</span><span>Submission</span><span>English</span></div></div><button class="btn btn-sm btn-terra" onclick="openPDF('static/files/mmda-submission.pdf','MMDA Submission')">📄 View</button></div>
-        <div class="doc-row" data-type="report" data-year="2025"><div class="drbar p3"></div><div class="drb"><div class="title">CEDAW Concluding Observations — February 2025</div><div class="meta"><span>📅 February 2025</span><span>Report</span><span>English</span></div></div><button class="btn btn-sm btn-ol" onclick="openPDF('static/files/cedaw-concluding-obs-2025.pdf','CEDAW Obs 2025')">📄 View</button></div>
-        <!-- Press Releases -->
-        <div class="doc-row" data-type="press" data-year="2026" style="display:none"><div class="drbar" style="background:var(--purple3)"></div><div class="drb"><div class="title">NCW Responds to Supreme Court Ruling on Employment Discrimination</div><div class="meta"><span>📅 12 April 2026</span><span>Press Release</span><span>English</span></div></div><button class="btn btn-sm btn-md" onclick="openPDF('#','Press Release')">📄 View</button></div>
-        <div class="doc-row" data-type="press" data-year="2026" style="display:none"><div class="drbar" style="background:var(--purple3)"></div><div class="drb"><div class="title">NCW Launches Regional Outreach Programme — Trincomalee &amp; Batticaloa</div><div class="meta"><span>📅 2 March 2026</span><span>Press Release</span><span>English · Tamil</span></div></div><button class="btn btn-sm btn-md" onclick="openPDF('#','Press Release')">📄 View</button></div>
-        <!-- Gallery (shown as block, not row) -->
-      </div>
-      <!-- Gallery section (shown only when gallery filter active) -->
-      <div id="gallery-section" style="display:none">
-        <p style="font-size:0.88rem;color:var(--tlt);margin-bottom:16px">Photo gallery — events and outreach activities of the National Commission on Women.</p>
-        <div class="gallery-grid">
-          <div class="gallery-item">🖼️</div><div class="gallery-item">🖼️</div><div class="gallery-item">🖼️</div>
-          <div class="gallery-item">🖼️</div><div class="gallery-item">🖼️</div><div class="gallery-item">🖼️</div>
-        </div>
-        <p style="font-size:0.82rem;color:var(--tlt);margin-top:12px">Photos will be added here when available. Placeholder images shown.</p>
-      </div>
-    </main>
   </div>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
 
-<!-- ═══════════════════════ DOWNLOADS ═══════════════════════ -->
-<div id="page-downloads" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Downloads &amp; Forms</span><h1>Downloads &amp; Forms</h1><p>Official forms and documents from the National Commission on Women. All forms are free to download and use.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <div class="dl-placeholder-note">📌 <strong>Note:</strong> Official forms will be published here once they are approved by the Commission. Placeholder entries are shown below. Please check back or contact the NCW directly.</div>
-    <div style="height:36px"></div>
-
-    <div class="download-section-hdr"><span style="font-size:1.6rem">📋</span><h3>Complaint &amp; Inquiry Forms</h3></div>
-    <div class="download-row">
-      <span class="dl-icon">📄</span>
-      <div class="dl-body"><div class="dl-title">Complaint Form — NCW/CF/2026</div><div class="dl-meta">For submitting a formal complaint to the National Commission on Women · PDF · English</div></div>
-      <div class="dl-actions"><a class="btn-dl" href="static/files/complaint-form-en.pdf" download>⬇ Download</a></div>
-    </div>
-    <div class="download-row">
-      <span class="dl-icon">📄</span>
-      <div class="dl-body"><div class="dl-title">Complaint Form — Sinhala</div><div class="dl-meta">PDF · Sinhala</div></div>
-      <div class="dl-actions"><a class="btn-dl" href="static/files/complaint-form-si.pdf" download>⬇ Download</a></div>
-    </div>
-    <div class="download-row">
-      <span class="dl-icon">📄</span>
-      <div class="dl-body"><div class="dl-title">Complaint Form — Tamil</div><div class="dl-meta">PDF · Tamil</div></div>
-      <div class="dl-actions"><a class="btn-dl" href="static/files/complaint-form-ta.pdf" download>⬇ Download</a></div>
-    </div>
-
-    <div style="height:44px"></div>
-    <div class="download-section-hdr"><span style="font-size:1.6rem">🤝</span><h3>Mediation Forms</h3></div>
-    <div class="download-row">
-      <span class="dl-icon">📄</span>
-      <div class="dl-body"><div class="dl-title">Application for Mediation — NCW/MED/2026</div><div class="dl-meta">To request mediation through the NCW mediation panel · PDF · English</div></div>
-      <div class="dl-actions"><a class="btn-dl" href="static/files/mediation-form-en.pdf" download>⬇ Download</a></div>
-    </div>
-
-    <div style="height:44px"></div>
-    <div class="download-section-hdr"><span style="font-size:1.6rem">📑</span><h3>Other Official Documents</h3></div>
-    <div class="download-row">
-      <span class="dl-icon">📄</span>
-      <div class="dl-body"><div class="dl-title">Request for Information Form</div><div class="dl-meta">To request public information from the Commission under the Right to Information Act · PDF · English</div></div>
-      <div class="dl-actions"><a class="btn-dl" href="static/files/rti-form.pdf" download>⬇ Download</a></div>
-    </div>
-    <div class="download-row">
-      <span class="dl-icon">📜</span>
-      <div class="dl-body"><div class="dl-title">Women Empowerment Act No. 37 of 2024 — Full Text</div><div class="dl-meta">PDF · English · Sinhala · Tamil</div></div>
-      <div class="dl-actions">
-        <a class="btn-dl" href="static/files/we-act-english.pdf" download>EN</a>
-        <a class="btn-dl" href="static/files/we-act-sinhala.pdf" download>SI</a>
-        <a class="btn-dl" href="static/files/we-act-tamil.pdf" download>TA</a>
+  <nav class="mainnav">
+    <div class="nav-logo-row">
+      <div class="nav-logo-row-inner">
+        <a class="brand" onclick="go('home')">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="27" cy="31" r="22" stroke-dasharray="120 30"/><circle cx="27" cy="31" r="15" stroke-dasharray="80 25"/><circle cx="27" cy="31" r="8" stroke-dasharray="45 15"/></g></svg>
+          <div class="brand-text">
+            <div class="si">ජාතික කාන්තා කොමිෂන් සභාව</div>
+            <div class="ta">தேசிய பெண்கள் ஆணைக்குழு</div>
+            <div class="en">National Commission on Women</div>
+          </div>
+        </a>
+        <button class="nav-hamburger" onclick="toggleMob()" aria-label="Open menu" aria-expanded="false" id="hamburger-btn"><span></span><span></span><span></span></button>
       </div>
     </div>
-  </div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
 
-<!-- ═══════════════════════ DECISIONS ═══════════════════════ -->
-<div id="page-decisions" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Decisions &amp; Recommendations</span><h1>Decisions</h1><p>Decisions, recommendations, and settlements issued by the NCW following inquiries and mediation proceedings.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px">
-      <button class="btn btn-sm btn-dk" onclick="fDecision('all',this)">All</button>
-      <button class="btn btn-sm btn-ol" onclick="fDecision('inquiry',this)">Inquiry Decisions</button>
-      <button class="btn btn-sm btn-ol" onclick="fDecision('med',this)">Mediation Settlements</button>
-      <button class="btn btn-sm btn-ol" onclick="fDecision('rec',this)">Recommendations</button>
-    </div>
-
-    <div id="decisions-list">
-      <div class="decision-row" data-dtype="inquiry">
-        <span class="dec-type-badge">Inquiry Decision</span>
-        <div class="dec-body">
-          <div class="dec-ref">NCW/INQ/2026/001</div>
-          <div class="dec-title">Decision — Workplace Discrimination Complaint</div>
-          <div class="dec-summary">The Commission investigated a complaint of discriminatory dismissal on grounds of pregnancy. The Commission found in favour of the complainant and directed the employer to reinstate and compensate the employee.</div>
-          <div class="dec-meta">📅 March 2026 &nbsp;·&nbsp; <button class="btn btn-sm btn-ol" style="padding:5px 12px;font-size:0.72rem" onclick="openPDF('#','NCW Decision NCW/INQ/2026/001')">View Decision</button></div>
-        </div>
-      </div>
-      <div class="decision-row" data-dtype="med">
-        <span class="dec-type-badge med">Mediation Settlement</span>
-        <div class="dec-body">
-          <div class="dec-ref">NCW/MED/2026/001</div>
-          <div class="dec-title">Settlement — Property Rights Dispute</div>
-          <div class="dec-summary">A mediation proceeding was concluded successfully within 60 days. Both parties reached an agreement on property rights. Full details are not disclosed to protect the privacy of the parties.</div>
-          <div class="dec-meta">📅 February 2026 &nbsp;·&nbsp; Summary only — full decision withheld to protect privacy</div>
-        </div>
-      </div>
-      <div class="decision-row" data-dtype="rec">
-        <span class="dec-type-badge rec">Recommendation</span>
-        <div class="dec-body">
-          <div class="dec-ref">NCW/REC/2025/001</div>
-          <div class="dec-title">Recommendation to the Ministry of Labour — Equal Pay</div>
-          <div class="dec-summary">Following research and public consultation, the Commission issued a formal recommendation to the Ministry of Labour to introduce regulations to close the gender pay gap in the public sector.</div>
-          <div class="dec-meta">📅 November 2025 &nbsp;·&nbsp; <button class="btn btn-sm btn-ol" style="padding:5px 12px;font-size:0.72rem" onclick="openPDF('#','NCW Recommendation NCW/REC/2025/001')">View Recommendation</button></div>
+    <div class="nav-menu-row">
+      <div class="nav-menu-row-inner">
+        <div class="nav-menu">
+          <div class="nav-item">
+            <button class="nav-toplink" id="navtop-about">About Us <span class="caret">▾</span></button>
+            <div class="nav-dropdown">
+              <a onclick="go('about-history')">History</a>
+              <a onclick="go('about-act')">Act</a>
+              <a onclick="go('about-members')">Members of the Commission</a>
+              <a onclick="go('about-structure')">Organisational Structure</a>
+              <a onclick="go('about-strategic')">Strategic Plan</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink" onclick="goStub('Divisions')">Divisions</button>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink" onclick="goStub('Documentation')">Documentation</button>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink">Recommendations &amp; Mediation <span class="caret">▾</span></button>
+            <div class="nav-dropdown">
+              <a onclick="goStub('Case Recommendations')">Case Recommendations</a>
+              <a onclick="goStub('Mediations')">Mediations</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink">News <span class="caret">▾</span></button>
+            <div class="nav-dropdown">
+              <a onclick="goStub('Press Releases')">Press Releases</a>
+              <a onclick="goStub('Events')">Events</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink">Contact Us <span class="caret">▾</span></button>
+            <div class="nav-dropdown">
+              <a onclick="go('contact-head')">Head Office</a>
+              <a onclick="goStub('Regional Offices')">Regional Offices</a>
+              <a onclick="goStub('Sub Offices')">Sub Offices</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <button class="nav-toplink">Right to Information <span class="caret">▾</span></button>
+            <div class="nav-dropdown">
+              <a onclick="goStub('Download the Forms')">Download the Forms</a>
+              <a onclick="goStub('Information Officers')">Information Officers</a>
+              <a onclick="goStub('Information available to the Public')">Information available to the Public</a>
+              <a onclick="goStub('Information not available for Public Disclosure')">Information not available for Public Disclosure</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div style="margin-top:32px;background:var(--purple7);border:2px solid var(--border);padding:22px 26px;font-size:0.92rem;color:var(--tmid);line-height:1.75">
-      <strong style="color:var(--purple)">Privacy Note:</strong> Decisions involving individual complainants may be published in summary form only, to protect the privacy and safety of the parties involved. Full decisions are available for inspection at the Commission's offices.
-    </div>
-  </div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
-
-<!-- ═══════════════════════ SCHEDULE ═══════════════════════ -->
-<div id="page-schedule" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Inquiry &amp; Mediation Schedule</span><h1>Schedule</h1><p>Upcoming inquiry hearings, mediation sessions, and public proceedings of the National Commission on Women.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <div class="schedule-notice">
-      📌 <strong>Note:</strong> Case references are used to protect the privacy of complainants. If you have a scheduled session, please bring your official NCW case reference letter. For enquiries about a specific case, contact the Commission directly at <strong>contact.ncw@gmail.com</strong>.
-    </div>
-
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;align-items:center">
-      <strong style="font-size:0.82rem;color:var(--tlt);text-transform:uppercase;letter-spacing:0.08em">Filter:</strong>
-      <button class="btn btn-sm btn-dk" onclick="fSchedule('all',this)">All Sessions</button>
-      <button class="btn btn-sm btn-ol" onclick="fSchedule('inquiry',this)">Inquiry</button>
-      <button class="btn btn-sm btn-ol" onclick="fSchedule('mediation',this)">Mediation</button>
-      <button class="btn btn-sm btn-ol" onclick="fSchedule('hearing',this)">Hearing</button>
-    </div>
-
-    <table class="sched-table" id="sched-table">
-      <thead>
-        <tr><th>Date</th><th>Time</th><th>Case Reference</th><th>Type</th><th>Venue</th><th>Status</th></tr>
-      </thead>
-      <tbody>
-        <tr data-stype="inquiry"><td>28 May 2026</td><td>9:30 AM</td><td>NCW/INQ/2026/004</td><td><span class="sched-type inquiry">Inquiry</span></td><td>NCW Main Office, Colombo</td><td><span class="sched-status scheduled">Scheduled</span></td></tr>
-        <tr data-stype="mediation"><td>29 May 2026</td><td>10:00 AM</td><td>NCW/MED/2026/007</td><td><span class="sched-type mediation">Mediation</span></td><td>NCW Main Office, Colombo</td><td><span class="sched-status scheduled">Scheduled</span></td></tr>
-        <tr data-stype="mediation"><td>2 June 2026</td><td>2:00 PM</td><td>NCW/MED/2026/008</td><td><span class="sched-type mediation">Mediation</span></td><td>Kandy Regional Office</td><td><span class="sched-status scheduled">Scheduled</span></td></tr>
-        <tr data-stype="hearing"><td>5 June 2026</td><td>9:00 AM</td><td>NCW/INQ/2026/002</td><td><span class="sched-type hearing">Hearing</span></td><td>NCW Main Office, Colombo</td><td><span class="sched-status postponed">Postponed</span></td></tr>
-        <tr data-stype="inquiry"><td>10 June 2026</td><td>10:30 AM</td><td>NCW/INQ/2026/005</td><td><span class="sched-type inquiry">Inquiry</span></td><td>Jaffna Regional Office</td><td><span class="sched-status scheduled">Scheduled</span></td></tr>
-        <tr data-stype="mediation"><td>12 June 2026</td><td>9:00 AM</td><td>NCW/MED/2026/009</td><td><span class="sched-type mediation">Mediation</span></td><td>NCW Main Office, Colombo</td><td><span class="sched-status scheduled">Scheduled</span></td></tr>
-      </tbody>
-    </table>
-
-    <div style="margin-top:24px;font-size:0.86rem;color:var(--tlt);line-height:1.7">
-      The schedule is updated regularly. Last updated: 20 May 2026. For the most current information, contact the NCW directly.
-    </div>
-  </div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
-
-<!-- ═══════════════════════ CAREERS ═══════════════════════ -->
-<div id="page-careers" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Careers &amp; Opportunities</span><h1>Careers</h1><p>Work with the National Commission on Women to protect and promote the rights of women across Sri Lanka.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <span class="eyebrow">Current Vacancies</span>
-    <h2>Open Positions</h2>
-    <div style="height:28px"></div>
-
-    <div class="no-vacancies">
-      <span class="nv-icon">💼</span>
-      <h3>No Current Vacancies</h3>
-      <p>There are no open positions at this time. Please check back regularly or send your CV to <strong>contact.ncw@gmail.com</strong> for future consideration.</p>
-    </div>
-
-    <div style="height:60px"></div>
-    <span class="eyebrow">How We Work</span>
-    <h2>Working at the NCW</h2>
-    <div class="careers-info-grid" style="margin-top:28px">
-      <div class="careers-info-card"><span class="ci-icon">⚖️</span><h4>What We Do</h4><p>The NCW investigates rights violations, conducts mediations, develops policy, and promotes women's rights across Sri Lanka. Our staff work directly with complainants, government bodies, and civil society.</p></div>
-      <div class="careers-info-card"><span class="ci-icon">🌺</span><h4>Who We Look For</h4><p>We welcome applications from people with expertise in law, social work, research, communications, gender studies, public policy, or administration. We are committed to equal opportunity in our own recruitment.</p></div>
-      <div class="careers-info-card"><span class="ci-icon">🎓</span><h4>Internships &amp; Attachments</h4><p>We periodically offer internship placements for undergraduate and postgraduate students. Contact us at <strong>contact.ncw@gmail.com</strong> with your CV and a covering note to enquire.</p></div>
-    </div>
-  </div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('careers')">Careers</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
-</div>
-
-<!-- ═══════════════════════ FAQ ═══════════════════════ -->
-<div id="page-faq" class="page">
-  <div class="page-hero"><div class="container"><span class="eyebrow">Frequently Asked Questions</span><h1>FAQ</h1><p>Answers to the most common questions about the NCW, your rights, and how to make a complaint.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container">
-    <div class="faq-grid">
-      <!-- Column 1: About Complaints -->
-      <div>
-        <h3>Making a Complaint</h3>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Who can make a complaint to the NCW?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>Any woman whose rights have been violated can make a complaint. A family member, friend, or organisation can also make a complaint on her behalf. You do not need a lawyer or any official documents to get started.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">How do I make a complaint?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>You can make a complaint by:</p><ul><li>Emailing the NCW at contact.ncw@gmail.com</li><li>Sending a letter by post to the NCW's address</li><li>Visiting the NCW offices in person</li><li>Downloading the complaint form from the Downloads page and submitting it by email or post</li></ul><p>The NCW will inform you of the action taken within 14 days of receiving your complaint.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Is there a fee for making a complaint?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>No. Making a complaint to the NCW is completely free of charge. You do not need to pay anything or hire a lawyer.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">How long do I have to make a complaint?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>You should make your complaint within one month of the rights violation taking place. If you are unsure whether you are within the time limit, contact the NCW to discuss your situation.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Can I make a complaint on behalf of someone else?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>Yes. If the woman affected cannot make the complaint herself — for reasons of safety, health, age, or any other reason — another person or organisation can submit the complaint on her behalf.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Can I make a complaint in Sinhala or Tamil?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>Yes. The NCW accepts complaints in English, Sinhala, and Tamil. Complaint forms will be available in all three languages on the Downloads page.</p></div></div>
+    <div class="mob-menu" id="mob-menu">
+      <div class="mob-group"><a class="mob-group-hd" onclick="go('about-history')">About Us</a>
+        <a onclick="go('about-history')">History</a>
+        <a onclick="go('about-act')">Act</a>
+        <a onclick="go('about-members')">Members of the Commission</a>
+        <a onclick="go('about-structure')">Organisational Structure</a>
+        <a onclick="go('about-strategic')">Strategic Plan</a>
       </div>
-      <!-- Column 2: Process & Rights -->
-      <div>
-        <h3>Process &amp; Rights</h3>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">What happens after I submit a complaint?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>The NCW will:</p><ul><li>Review your complaint and inform you of the action being taken within 14 days</li><li>Either investigate the matter directly or refer it to mediation</li><li>Keep you informed throughout the process</li></ul><p>If the case goes to mediation, the mediation must be completed within 60 days.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">What is mediation?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>Mediation is a process where a trained, neutral person (a mediator) helps both sides of a dispute reach a fair agreement — without going to court. It is usually faster, less stressful, and less expensive than a court case. The NCW has a trained panel of mediators to handle these cases.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">What kinds of problems can the NCW help with?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>The NCW can help with a wide range of issues, including:</p><ul><li>Domestic violence and abuse</li><li>Sexual harassment or assault</li><li>Workplace discrimination or unfair dismissal</li><li>Unequal pay</li><li>Denial of property or inheritance rights</li><li>Discrimination by a government body or private institution</li><li>Any other violation of women's rights under the Women Empowerment Act</li></ul></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">What if I am not satisfied with the NCW's decision?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>If you disagree with the Commission's decision, you have the right to appeal to the Court of Appeal within one month of the decision being issued.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Can the NCW investigate a problem without a complaint being made?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>Yes. The Commission has the power to investigate any rights violation on its own initiative — without a formal complaint being made. This is called an "own-motion investigation." The NCW may do this if it becomes aware of a serious or widespread problem affecting women.</p></div></div>
-        <div class="faq-item"><button class="faq-toggle" onclick="toggleFAQ(this)"><span class="fq-q">Will my complaint be kept confidential?</span><span class="fq-arrow">▼</span></button><div class="faq-body"><p>The NCW takes the privacy and safety of complainants seriously. If a decision is published, it will generally be published in summary form to protect your identity. Please contact the NCW if you have concerns about confidentiality in your specific case.</p></div></div>
+      <a class="mob-flat" onclick="goStub('Divisions')">Divisions</a>
+      <a class="mob-flat" onclick="goStub('Documentation')">Documentation</a>
+      <div class="mob-group"><a class="mob-group-hd" onclick="goStub('Case Recommendations')">Recommendations &amp; Mediation</a>
+        <a onclick="goStub('Case Recommendations')">Case Recommendations</a>
+        <a onclick="goStub('Mediations')">Mediations</a>
+      </div>
+      <div class="mob-group"><a class="mob-group-hd" onclick="goStub('Press Releases')">News</a>
+        <a onclick="goStub('Press Releases')">Press Releases</a>
+        <a onclick="goStub('Events')">Events</a>
+      </div>
+      <div class="mob-group"><a class="mob-group-hd" onclick="go('contact-head')">Contact Us</a>
+        <a onclick="go('contact-head')">Head Office</a>
+        <a onclick="goStub('Regional Offices')">Regional Offices</a>
+        <a onclick="goStub('Sub Offices')">Sub Offices</a>
+      </div>
+      <div class="mob-group"><a class="mob-group-hd" onclick="goStub('Download the Forms')">Right to Information</a>
+        <a onclick="goStub('Download the Forms')">Download the Forms</a>
+        <a onclick="goStub('Information Officers')">Information Officers</a>
+        <a onclick="goStub('Information available to the Public')">Information available to the Public</a>
+        <a onclick="goStub('Information not available for Public Disclosure')">Information not available for Public Disclosure</a>
       </div>
     </div>
-  </div></section>
+  </nav>
 
-  <div class="faq-cta">
-    <div class="faq-cta-inner">
-      <h2>Still have questions?</h2>
-      <p>Contact the NCW directly by email or use the contact form. Our team is here to help.</p>
-      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-terra" onclick="go('contact')">📋 Make a Complaint</button>
-        <button class="btn btn-ol-wh" onclick="go('contact')">Contact Us</button>
+  <main id="main">
+
+  <!-- ═══ HOME ═══ -->
+  <div id="page-home" class="page">
+
+    <div class="action-bar">
+      <div class="container action-bar-inner">
+        <button class="pill-btn" onclick="go('contact-head')">Make a Complaint</button>
+        <a class="pill-btn alt" href="https://hurin.hrcsl.lk/track_my_case" target="_blank" rel="noopener noreferrer">Progress of Complaints</a>
+        <button class="pill-btn alt" onclick="goStub('Daily Inquiry Schedule')">Daily Inquiry Schedule</button>
       </div>
     </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="carousel-head"><h2>Latest News</h2></div>
+        <div class="carousel-wrap">
+          <button class="car-arrow" aria-label="Previous" onclick="carMove('newsTrack',-1)">‹</button>
+          <div class="carousel-track-outer"><div class="carousel-track" id="newsTrack">
+            <div class="car-card" onclick="goStub('Press Releases')">
+              <div class="car-img"><svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="30" cy="30" r="22" stroke-dasharray="120 30"/><circle cx="30" cy="30" r="15" stroke-dasharray="80 25"/><circle cx="30" cy="30" r="8" stroke-dasharray="45 15"/></g></svg><div class="ciw">National Commission on Women</div></div>
+              <div class="car-body"><h4>International Women's Day Statement 2026</h4><p>The Commission reaffirms its commitment to protecting and promoting women's rights and outlines its key functions for the year ahead.</p><div class="car-meta">8 March 2026 · Statement</div></div>
+            </div>
+            <div class="car-card" onclick="goStub('Press Releases')">
+              <div class="car-img"><svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="30" cy="30" r="22" stroke-dasharray="120 30"/><circle cx="30" cy="30" r="15" stroke-dasharray="80 25"/><circle cx="30" cy="30" r="8" stroke-dasharray="45 15"/></g></svg><div class="ciw">National Commission on Women</div></div>
+              <div class="car-body"><h4>MMDA Reform — NCW Submission to Parliament</h4><p>The Commission's formal submission to the Parliamentary process on the reform of the Muslim Marriage and Divorce Act.</p><div class="car-meta">2026 · Submission</div></div>
+            </div>
+            <div class="car-card" onclick="goStub('Press Releases')">
+              <div class="car-img"><svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="30" cy="30" r="22" stroke-dasharray="120 30"/><circle cx="30" cy="30" r="15" stroke-dasharray="80 25"/><circle cx="30" cy="30" r="8" stroke-dasharray="45 15"/></g></svg><div class="ciw">National Commission on Women</div></div>
+              <div class="car-body"><h4>CEDAW Concluding Observations 2025</h4><p>The UN CEDAW Committee's concluding observations on Sri Lanka's ninth periodic report.</p><div class="car-meta">February 2025 · Report</div></div>
+            </div>
+          </div></div>
+          <button class="car-arrow" aria-label="Next" onclick="carMove('newsTrack',1)">›</button>
+        </div>
+        <div class="view-all-wrap"><button class="pill-btn" onclick="goStub('News')">View All</button></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="carousel-head"><h2>Current Activities</h2></div>
+        <div class="carousel-wrap">
+          <button class="car-arrow" aria-label="Previous" onclick="carMove('actTrack',-1)">‹</button>
+          <div class="carousel-track-outer"><div class="carousel-track" id="actTrack">
+            <div class="car-card" onclick="goStub('Press Releases')">
+              <div class="car-img alt"><svg viewBox="0 0 24 24" fill="none" stroke="#003C4B" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><div class="ciw">Photo to be added</div></div>
+              <div class="car-body"><h4>NCW Responds to Supreme Court Ruling on Employment Discrimination</h4><p>Read the Commission's full statement.</p><div class="car-meta">12 April 2026</div></div>
+            </div>
+            <div class="car-card" onclick="goStub('Press Releases')">
+              <div class="car-img alt"><svg viewBox="0 0 24 24" fill="none" stroke="#003C4B" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><div class="ciw">Photo to be added</div></div>
+              <div class="car-body"><h4>NCW Launches Regional Outreach Programme — Trincomalee &amp; Batticaloa</h4><p>Read more about the Commission's regional outreach activities.</p><div class="car-meta">2 March 2026</div></div>
+            </div>
+            <div class="car-card" onclick="goStub('News')">
+              <div class="car-img alt"><svg viewBox="0 0 24 24" fill="none" stroke="#003C4B" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><div class="ciw">Photo to be added</div></div>
+              <div class="car-body"><h4>More Activities Coming Soon</h4><p>Further activities will be published here as they take place.</p></div>
+            </div>
+          </div></div>
+          <button class="car-arrow" aria-label="Next" onclick="carMove('actTrack',1)">›</button>
+        </div>
+        <div class="view-all-wrap"><button class="pill-btn" onclick="goStub('News')">View All</button></div>
+      </div>
+    </section>
+
   </div>
 
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a><a onclick="go('careers')">Careers</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
+  <!-- ═══ ABOUT: HISTORY ═══ -->
+  <div id="page-about-history" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / About Us / History</p>
+      <span class="eyebrow">About Us</span>
+      <h1>Our History</h1>
+      <p class="lead">How the National Commission on Women came to be established, and what it now oversees.</p>
+    </div>
+    <div class="action-bar">
+      <div class="container action-bar-inner">
+        <button class="pill-btn" onclick="go('contact-head')">Make a Complaint</button>
+        <a class="pill-btn alt" href="https://hurin.hrcsl.lk/track_my_case" target="_blank" rel="noopener noreferrer">Progress of Complaints</a>
+        <button class="pill-btn alt" onclick="goStub('Daily Inquiry Schedule')">Daily Inquiry Schedule</button>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <p>The National Commission on Women was established under the Women Empowerment Act No. 37 of 2024, certified on 2 July 2024 and published in the Government Gazette.</p>
+            <p>The Commission is the result of decades of work by women's rights groups and organisations across Sri Lanka, who campaigned for an independent national body dedicated to protecting and advancing women's rights.</p>
+            <p>Seven Commissioners were appointed by H.E. the President Anura Kumara Dissanayake in September 2025, based on the recommendations of the Constitutional Council and the Women Parliamentarians' Caucus.</p>
+            <p>As an independent body, the Commission oversees the Ministry of Women and Child Affairs and monitors how the National Policy on Gender Equality and Women's Empowerment is being carried out.</p>
+          </div>
+          <div>
+            <div class="info-block">
+              <div class="info-block-hd">Key Dates</div>
+              <div class="info-block-bd" style="padding:0;background:#fff">
+                <ul class="key-dates">
+                  <li><span class="kd-date">2 Jul 2024</span><span class="kd-txt">Women Empowerment Act No. 37 of 2024 certified</span></li>
+                  <li><span class="kd-date">Sep 2025</span><span class="kd-txt">Seven Commissioners appointed by H.E. the President</span></li>
+                  <li><span class="kd-date">Ongoing</span><span class="kd-txt">Commission begins operations and regional outreach</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ ABOUT: ACT ═══ -->
+  <div id="page-about-act" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / About Us / Act</p>
+      <span class="eyebrow">About Us</span>
+      <h1>Women Empowerment Act No. 37 of 2024</h1>
+      <p class="lead">The law that establishes the National Commission on Women and sets out its powers and duties. Certified on 2 July 2024.</p>
+      <div class="lang-btns-row">
+        <button class="btn btn-purple btn-sm" onclick="openPDF('static/files/we-act-english.pdf','Women Empowerment Act — English')">📄 View — English</button>
+        <button class="btn btn-outline btn-sm" onclick="openPDF('static/files/we-act-sinhala.pdf','Women Empowerment Act — Sinhala')">📄 බලන්න — Sinhala</button>
+        <button class="btn btn-outline btn-sm" onclick="openPDF('static/files/we-act-tamil.pdf','Women Empowerment Act — Tamil')">📄 பார்க்கவும் — Tamil</button>
+      </div>
+      <div class="summary-acc">
+        <button class="summary-toggle" onclick="toggleSummary(this)">💡 Plain Language Summary — What does this Act mean for you? <span class="sa">▼</span></button>
+        <div class="summary-body">
+          <p>This is the law that created the National Commission on Women. It came into effect in July 2024.</p>
+          <ul>
+            <li>Every woman in Sri Lanka has rights that cannot be taken away from her.</li>
+            <li>A commission of seven independent people has been set up to protect those rights.</li>
+            <li>You can make a complaint to the NCW if your rights have been violated, free of charge and without a lawyer.</li>
+            <li>The NCW must respond to your complaint within 14 days.</li>
+            <li>If your case goes to mediation, it must be resolved within 60 days.</li>
+            <li>If you are not happy with the decision, you can appeal to the Court of Appeal within one month.</li>
+            <li>The NCW can also investigate problems on its own, without a complaint being made first.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <span class="eyebrow">Section 4 · Objectives of the Act</span>
+        <h2>What the Act Sets Out to Achieve</h2>
+        <div class="obj-grid">
+          <div class="obj-item"><span class="obj-num">01</span><p>Introduce ways to protect women's rights under the Constitution</p></div>
+          <div class="obj-item"><span class="obj-num">02</span><p>Carry out Sri Lanka's obligations under CEDAW and related laws</p></div>
+          <div class="obj-item"><span class="obj-num">03</span><p>Create a national policy for the advancement and empowerment of women</p></div>
+          <div class="obj-item"><span class="obj-num">04</span><p>Protect women from discrimination based on gender and sexual orientation</p></div>
+          <div class="obj-item"><span class="obj-num">05</span><p>Prevent harassment, marginalisation, sexual harassment and violence against women</p></div>
+          <div class="obj-item"><span class="obj-num">06</span><p>Recommend law reforms to stop discrimination and support women's empowerment</p></div>
+          <div class="obj-item"><span class="obj-num">07</span><p>Support women's participation in justice and equal representation in decision-making</p></div>
+          <div class="obj-item"><span class="obj-num">08</span><p>Ensure women's economic empowerment, with special attention to women with disabilities</p></div>
+          <div class="obj-item"><span class="obj-num">09</span><p>Run public education programmes on all aspects of women's empowerment</p></div>
+          <div class="obj-item"><span class="obj-num">10</span><p>Promote equal pay for equal work</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <span class="eyebrow">Section 6 · Powers of the Commission</span>
+        <h2>What the NCW Can Do</h2>
+        <div class="pow-grid">
+          <div class="pow-item"><h4>Investigate Violations</h4><p>Look into rights violations, on its own initiative or when a complaint is received.</p></div>
+          <div class="pow-item"><h4>Go to Court</h4><p>Intervene in court cases about women's rights and take action in any competent court.</p></div>
+          <div class="pow-item"><h4>Mediation</h4><p>Send cases to a trained mediation panel, either on complaint or on its own motion.</p></div>
+          <div class="pow-item"><h4>Monitor Compliance</h4><p>Check that private bodies and government institutions are upholding women's rights.</p></div>
+          <div class="pow-item"><h4>Policy Formulation</h4><p>Develop the National Policy on women's advancement and empowerment.</p></div>
+          <div class="pow-item"><h4>Recommend Law Changes</h4><p>Advise the Government on updating laws to meet international standards.</p></div>
+          <div class="pow-item"><h4>Regional Offices</h4><p>Open offices in provinces and regions across Sri Lanka for easier access.</p></div>
+          <div class="pow-item"><h4>Award Compensation</h4><p>Award compensation to complainants for reasonable costs incurred in making a complaint.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <span class="eyebrow">Part II · Inquiry &amp; Enforcement</span>
+        <h2>Key Timelines</h2>
+        <div class="enf-grid">
+          <div class="enf-card"><div class="enf-lbl"><span class="t">Own</span><span class="u">Motion</span></div><div class="enf-body"><h4>Own-Motion Investigations</h4><p>May be started without a complaint. Must conclude within one month (Section 18).</p></div></div>
+          <div class="enf-card"><div class="enf-lbl"><span class="t">14</span><span class="u">Days</span></div><div class="enf-body"><h4>Response to Complaints</h4><p>The NCW must inform the complainant of the action taken within 14 days (Section 19).</p></div></div>
+          <div class="enf-card"><div class="enf-lbl"><span class="t">60</span><span class="u">Days</span></div><div class="enf-body"><h4>Mediation</h4><p>Mediation must be completed within 60 days of referral (Section 20).</p></div></div>
+          <div class="enf-card"><div class="enf-lbl"><span class="t">1</span><span class="u">Month</span></div><div class="enf-body"><h4>Right of Appeal</h4><p>You may appeal to the Court of Appeal within one month (Section 26).</p></div></div>
+          <div class="enf-card span2"><div class="enf-lbl"><span class="t">SC</span><span class="u">Referral</span></div><div class="enf-body"><h4>Supreme Court References</h4><p>The Commission receives references from the Supreme Court on women's rights matters under Article 126, and may refer questions on the scope of women's rights to the Supreme Court during an inquiry (Section 17).</p></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ ABOUT: MEMBERS ═══ -->
+  <div id="page-about-members" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / About Us / Members of the Commission</p>
+      <span class="eyebrow">About Us</span>
+      <h1>Members of the Commission</h1>
+      <p class="lead">Seven Commissioners were appointed in September 2025 by H.E. the President.</p>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="about-grid" style="margin-bottom:8px">
+          <div>
+            <p>Five Commissioners were appointed on the recommendation of the Constitutional Council, and two on the recommendation of the Women Parliamentarians' Caucus.</p>
+            <p>At least five members, including the Chairperson, must be women. Commissioners serve four-year terms and must have expertise in law, trade unionism, management, health, education or women's empowerment.</p>
+          </div>
+        </div>
+        <p class="comm-note">⚠ Commissioner names and photographs are to be confirmed by the Commission before this page is published.</p>
+        <div class="comm-grid">
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div><span class="comm-badge">Acting Chairperson</span></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+          <div class="comm-card"><div class="comm-photo"><svg viewBox="0 0 24 24" fill="none" stroke="#672D62" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div><div class="comm-info"><div class="nm">[Commissioner Name]</div><div class="rl">[Designation / Expertise]</div></div></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ ABOUT: ORGANISATIONAL STRUCTURE ═══ -->
+  <div id="page-about-structure" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / About Us / Organisational Structure</p>
+      <span class="eyebrow">About Us</span>
+      <h1>Organisational Structure</h1>
+      <p class="lead">How the Commission is organised under the Women Empowerment Act No. 37 of 2024.</p>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="tier-list">
+          <div class="tier"><h4>The Commission</h4><p>A Chairperson and seven Commissioners, appointed for four-year terms, set the direction of the NCW and make decisions on inquiries, mediation and policy.</p></div>
+          <div class="tier"><h4>The Secretariat</h4><p>Supports the Commission's day-to-day work, including administration, finance and case management.</p></div>
+          <div class="tier"><h4>Divisions</h4><p>The Secretariat is organised into operational divisions covering the Commission's core functions. Divisions will be listed here once confirmed.</p></div>
+          <div class="tier"><h4>Regional and Provincial Offices</h4><p>The Act empowers the Commission to open offices across Sri Lanka's provinces and regions, for easier access outside Colombo.</p></div>
+          <div class="tier"><h4>The Ombuds</h4><p>An independent office that can receive complaints about gender-based violence or rights violations and forward recommendations to the Commission.</p></div>
+          <div class="tier"><h4>National Fund for Women</h4><p>Managed by the Commission, the Fund receives money from Parliament and can accept donations from local and international sources.</p></div>
+        </div>
+        <p class="comm-note" style="margin-top:32px">A detailed organisational chart, including named Divisions, will be added here once confirmed by the Commission.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ ABOUT: STRATEGIC PLAN ═══ -->
+  <div id="page-about-strategic" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / About Us / Strategic Plan</p>
+      <span class="eyebrow">About Us</span>
+      <h1>Strategic Plan</h1>
+      <p class="lead">The Commission's strategic priorities for advancing women's rights across Sri Lanka.</p>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="notice-card">
+          <span class="ni">📋</span>
+          <h3>In Preparation</h3>
+          <p>The National Commission on Women's Strategic Plan is being prepared and will be published here once it has been approved by the Commission.</p>
+        </div>
+        <p style="text-align:center;margin-top:24px;color:var(--tmid);font-size:0.92rem">In the meantime, the Act's <a onclick="go('about-act')" style="color:var(--purple);cursor:pointer;text-decoration:underline">objectives and powers</a> set out the Commission's mandate.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ CONTACT: HEAD OFFICE ═══ -->
+  <div id="page-contact-head" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / Contact Us / Head Office</p>
+      <span class="eyebrow">Contact Us</span>
+      <h1>Head Office</h1>
+      <p class="lead">Reach the National Commission on Women at its head office, or make a complaint by email, post or in person.</p>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <div class="contact-row">
+              <div class="contact-icon">📍</div>
+              <div><div class="contact-lbl">Address</div><div class="contact-val">5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka</div></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">☎️</div>
+              <div><div class="contact-lbl">Phone</div><div class="contact-val"><a href="tel:+94112187248">011 218 7248</a></div></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon">✉️</div>
+              <div><div class="contact-lbl">Email</div><div class="contact-val"><a href="mailto:contact.ncw@gmail.com">contact.ncw@gmail.com</a></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="info-block">
+              <div class="info-block-hd">How to Make a Complaint</div>
+              <div class="info-block-bd">
+                <p>Any woman whose rights have been violated, or anyone acting on her behalf, can submit a complaint. It is free, and you do not need a lawyer.</p>
+                <p>The NCW must inform you of the action being taken within 14 days.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══ GENERIC STUB ═══ -->
+  <div id="page-stub" class="page">
+    <div class="page-hero-plain container">
+      <p class="crumb"><a onclick="go('home')">Home</a> / <span id="stub-crumb"></span></p>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="stub-wrap">
+          <span class="si">🚧</span>
+          <h2 id="stub-title">Page</h2>
+          <p>This section is being prepared. Content will be published here as it becomes available.<br>In the meantime, you can contact the Commission directly at <strong>contact.ncw@gmail.com</strong>.</p>
+          <button class="btn btn-outline" onclick="go('home')">← Back to Home</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg viewBox="0 0 60 60" aria-hidden="true"><g fill="none" stroke="#672D62" stroke-width="1.6"><circle cx="27" cy="31" r="22" stroke-dasharray="120 30"/><circle cx="27" cy="31" r="15" stroke-dasharray="80 25"/><circle cx="27" cy="31" r="8" stroke-dasharray="45 15"/></g></svg>
+          <div>
+            <div class="fen">National Commission on Women</div>
+            <p>An independent commission established under the Women Empowerment Act No. 37 of 2024 to protect and promote the rights of women in Sri Lanka.</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a onclick="go('home')">Home</a>
+          <a onclick="go('about-history')">About Us</a>
+          <a onclick="goStub('Divisions')">Divisions</a>
+          <a onclick="goStub('Documentation')">Documentation</a>
+          <a onclick="go('contact-head')">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <a onclick="goStub('Case Recommendations')">Recommendations &amp; Mediation</a>
+          <a onclick="goStub('News')">News</a>
+          <a onclick="goStub('Download the Forms')">Right to Information</a>
+          <a onclick="go('about-act')">Women Empowerment Act 2024</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 National Commission on Women, Sri Lanka</span>
+        <span>Established under Women Empowerment Act No. 37 of 2024</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="fab-complaint" onclick="go('contact-head')">📋 Make a Complaint</button>
+
+</div><!-- /page-site -->
+
+<!-- ═══ ACCESSIBILITY WIDGET (site-wide) ═══ -->
+<button class="a11y-fab" onclick="toggleA11y()" aria-label="Accessibility options" aria-expanded="false" id="a11y-fab">♿</button>
+<div class="a11y-panel" id="a11y-panel" role="dialog" aria-label="Accessibility options">
+  <h4>Accessibility</h4>
+  <div class="a11y-row">
+    <div class="lbl">Font Size</div>
+    <div class="a11y-btns">
+      <button class="a11y-btn" onclick="fontStep(-1)" aria-label="Decrease font size">A−</button>
+      <button class="a11y-btn" onclick="fontStep(1)" aria-label="Increase font size">A+</button>
+    </div>
+  </div>
+  <div class="a11y-row">
+    <div class="lbl">Keyboard Navigation</div>
+    <div class="a11y-btns"><button class="a11y-btn" id="btn-kbdnav" aria-pressed="false" onclick="toggleKbdNav()">Enable</button></div>
+  </div>
+  <div class="a11y-row">
+    <div class="lbl">Readable Font</div>
+    <div class="a11y-btns"><button class="a11y-btn" id="btn-readable" aria-pressed="false" onclick="toggleReadable()">Enable</button></div>
+  </div>
+  <div class="a11y-row">
+    <div class="lbl">Contrast</div>
+    <div class="a11y-btns">
+      <button class="a11y-btn" data-theme="" onclick="setTheme('')" aria-pressed="true">Default</button>
+      <button class="a11y-btn" data-theme="dark" onclick="setTheme('dark')" aria-pressed="false">Dark</button>
+      <button class="a11y-btn" data-theme="yellow" onclick="setTheme('yellow')" aria-pressed="false">Yellow / Black</button>
+      <button class="a11y-btn" data-theme="gray" onclick="setTheme('gray')" aria-pressed="false">Greyscale</button>
+    </div>
+  </div>
+  <button class="a11y-reset" onclick="resetA11y()">Reset All</button>
 </div>
 
-<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
-<div id="page-contact" class="page">
-  <!-- PROMINENT COMPLAINT BAND -->
-  <div class="complaint-hero-band">
-    <div class="complaint-hero-inner">
-      <div>
-        <h3>📋 Make a Complaint</h3>
-        <p>Contact us by email or post. We must respond within 14 days. No fee. No lawyer needed.</p>
-      </div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn btn-dk" href="static/files/complaint-form-en.pdf" download>⬇ Download Complaint Form</a>
-        <a class="btn btn-ol-wh" onclick="go('downloads')">All Forms</a>
-      </div>
-    </div>
+<!-- PDF modal -->
+<div id="pdf-modal" class="lang-modal" onclick="if(event.target===this)closePDF()">
+  <div class="lang-modal-box" style="max-width:640px">
+    <h3 id="pdf-modal-title">Document</h3>
+    <p>This document is not yet published on the site. Placeholder link:</p>
+    <p style="font-family:monospace;font-size:0.82rem;background:var(--purple-lt);padding:10px;word-break:break-all" id="pdf-modal-path"></p>
+    <div class="lang-modal-actions"><button class="btn btn-outline btn-sm" onclick="closePDF()">Close</button></div>
   </div>
-
-  <div class="page-hero" style="padding:48px 0 40px"><div class="container"><span class="eyebrow">Get in Touch</span><h1>Contact Us</h1><p>Reach the National Commission on Women. Contact us by email or post for general enquiries and formal complaints.</p></div></div>
-  <section class="section" style="background:#fff"><div class="container"><div class="contact-grid"><div class="contact-info"><h3>Contact Information</h3><p>The NCW welcomes communication from individuals, organisations, government institutions, and civil society on matters relating to women's rights in Sri Lanka.</p><div class="cdetail"><div class="cicon">✉️</div><div class="cdetail-text"><div class="lb">Email</div><div class="vl">contact.ncw@gmail.com</div></div></div><div class="cdetail"><div class="cicon">📍</div><div class="cdetail-text"><div class="lb">Postal Address</div><div class="vl">National Commission on Women<br>[Address — to be added]<br>Sri Lanka</div></div></div><div class="cdetail"><div class="cicon">🌐</div><div class="cdetail-text"><div class="lb">Website</div><div class="vl">ncwsrilanka.org</div></div></div>
-  <div class="complaints-box">
-    <h4>How to Submit a Complaint</h4>
-    <p>Any woman whose rights have been violated — or anyone acting on her behalf — can submit a complaint. It is free. You do not need a lawyer.</p>
-    <p style="margin-top:14px;color:rgba(255,255,255,0.4);font-size:0.76rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase">Key Timelines</p>
-    <ul class="timeline-list">
-      <li><span>1 month</span> to submit a complaint from the date of the violation</li>
-      <li><span>14 days</span> for the NCW to tell you what action is being taken</li>
-      <li><span>60 days</span> for mediation to be completed</li>
-      <li><span>1 month</span> to appeal a decision to the Court of Appeal</li>
-    </ul>
-    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap">
-      <a class="btn btn-terra btn-sm" href="static/files/complaint-form-en.pdf" download>⬇ Complaint Form (EN)</a>
-      <a class="btn btn-ol-wh btn-sm" onclick="go('faq')">❓ FAQ</a>
-    </div>
-  </div>
-  </div><div class="contact-form-panel"><h3>Send a Message</h3><p class="note">Use this form for general enquiries. For formal complaints, please download the complaint form or write to us by email or post.</p><div class="form-field"><label>Your Name</label><input type="text" placeholder="Full name"></div><div class="form-field"><label>Email Address</label><input type="email" placeholder="your@email.com"></div><div class="form-field"><label>Subject</label><select><option>General Enquiry</option><option>Complaint — I want to make a complaint</option><option>Media / Press</option><option>Research Collaboration</option><option>Civil Society Partnership</option><option>Other</option></select></div><div class="form-field"><label>Message</label><textarea placeholder="Your message…"></textarea></div><button class="btn btn-dk" style="width:100%;justify-content:center" onclick="alert('Thank you. This form will be active when the site goes live.')">Send Message</button></div></div></div></section>
-  <footer><div class="footer-inner"><div class="footer-brand"><span class="org">National Commission on Women</span><span class="country">Sri Lanka</span><p>An independent commission established under the Women Empowerment Act No. 37 of 2024.</p></div><div class="footer-col"><h5>Navigate</h5><a onclick="go('home')">Home</a><a onclick="go('about')">About Us</a><a onclick="go('legal')">Acts &amp; Laws</a><a onclick="go('docs')">Resources</a><a onclick="go('contact')">Contact</a></div><div class="footer-col"><h5>Information</h5><a onclick="go('faq')">FAQ</a><a onclick="go('downloads')">Downloads</a><a onclick="go('decisions')">Decisions</a><a onclick="go('schedule')">Schedule</a><a onclick="go('careers')">Careers</a></div><div class="footer-col"><h5>Legal</h5><a onclick="go('legal')">WE Act 2024</a><a onclick="go('legal')">CEDAW</a></div></div><div class="footer-bottom"><span>© 2026 National Commission on Women, Sri Lanka · ncwsrilanka.org</span><span>Established under Women Empowerment Act No. 37 of 2024</span></div></footer>
 </div>
 
 <script>
-// ── NAVIGATION ──
-const allPages = ['home','about','legal','docs','downloads','decisions','schedule','careers','faq','contact'];
-function go(id){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  const pg = document.getElementById('page-'+id);
-  if(pg) pg.classList.add('active');
-  document.querySelectorAll('.nav-links a, .nav-utility-inner a').forEach(a=>a.classList.remove('active'));
-  const n = document.getElementById('nav-'+id);
-  if(n) n.classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
+// ── GATEWAY / LANGUAGE ──
+let pendingLang = null;
+function chooseLang(lang){
+  if(lang==='en'){ enterSite('en'); return; }
+  pendingLang = lang;
+  document.getElementById('lm-native-msg').textContent = lang==='si'
+    ? 'සිදුවෙමින් පවතින අපහසුතාවයට කණගාටුයි.'
+    : 'ஏற்பட்ட சிரமத்திற்கு மன்னிக்கவும்.';
+  document.getElementById('lang-modal').classList.add('open');
 }
+function closeLangModal(){ document.getElementById('lang-modal').classList.remove('open'); pendingLang=null; }
+function proceedInEnglish(){ document.getElementById('lang-modal').classList.remove('open'); enterSite('en'); }
+function enterSite(lang){
+  document.getElementById('page-gateway').classList.remove('active');
+  document.getElementById('page-site').classList.add('active');
+  setSiteLangPill(lang);
+  go('home');
+}
+function switchLangFromSite(lang){
+  if(lang==='en'){ setSiteLangPill('en'); return; }
+  pendingLang = lang;
+  document.getElementById('lm-native-msg').textContent = lang==='si'
+    ? 'සිදුවෙමින් පවතින අපහසුතාවයට කණගාටුයි.'
+    : 'ஏற்பட்ட சிரமத்திற்கு மன்னிக்கவும்.';
+  document.getElementById('lang-modal').classList.add('open');
+}
+function setSiteLangPill(lang){
+  document.querySelectorAll('.util-lang').forEach(b=>b.classList.toggle('active', b.dataset.lang===lang));
+}
+
+// ── PAGE NAV ──
+function go(id){
+  document.querySelectorAll('#page-site .page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-toplink').forEach(b=>b.classList.remove('active'));
+  if(id.startsWith('about-')) document.getElementById('navtop-about').classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(document.getElementById('mob-menu').classList.contains('open')) toggleMob();
+}
+function goStub(title){
+  document.getElementById('stub-title').textContent = title;
+  document.getElementById('stub-crumb').textContent = title;
+  go('stub');
+}
+
+// ── CAROUSELS ──
+const carState = {};
+function carMove(id, dir){
+  const track = document.getElementById(id);
+  const cards = track.children;
+  if(!cards.length) return;
+  const gap = parseFloat(getComputedStyle(track).gap) || 0;
+  const cardWidth = cards[0].getBoundingClientRect().width + gap;
+  const visible = Math.max(1, Math.round(track.parentElement.getBoundingClientRect().width / cardWidth));
+  const maxOffset = Math.max(0, (cards.length - visible)) * cardWidth;
+  let current = carState[id] || 0;
+  current = Math.min(maxOffset, Math.max(0, current + dir * cardWidth));
+  carState[id] = current;
+  track.style.transform = 'translateX(-' + current + 'px)';
+}
+window.addEventListener('resize', function(){
+  Object.keys(carState).forEach(function(id){
+    carState[id] = 0;
+    const track = document.getElementById(id);
+    if(track) track.style.transform = 'translateX(0)';
+  });
+});
 
 // ── MOBILE MENU ──
 function toggleMob(){
-  document.getElementById('mob-menu').classList.toggle('open');
+  const m = document.getElementById('mob-menu');
+  m.classList.toggle('open');
+  document.getElementById('hamburger-btn').setAttribute('aria-expanded', m.classList.contains('open'));
 }
 
-// ── PDF MODAL ──
-function openPDF(url,title){
-  document.getElementById('pdf-modal-title').textContent=title;
-  document.getElementById('pdf-modal-frame').src=url;
-  document.getElementById('pdf-modal-download').href=url;
-  document.getElementById('pdf-modal').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closePDF(){
-  document.getElementById('pdf-modal').classList.remove('open');
-  document.getElementById('pdf-modal-frame').src='';
-  document.body.style.overflow='';
-}
-function closePDFOutside(e){if(e.target===document.getElementById('pdf-modal'))closePDF();}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closePDF();});
-
-// ── RESOURCES FILTERS ──
-let aType='all', aYear='all';
-function fType(t,b){
-  aType=t;
-  document.querySelectorAll('.sidebar-box:nth-child(1) .filter-btn').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  const gallerySection = document.getElementById('gallery-section');
-  const docsList = document.getElementById('docs-list');
-  if(t==='gallery'){
-    gallerySection.style.display='block';
-    docsList.style.display='none';
-  } else {
-    gallerySection.style.display='none';
-    docsList.style.display='flex';
-    applyFilters();
-  }
-}
-function fYear(y,b){
-  aYear=y;
-  document.querySelectorAll('.sidebar-box:nth-child(2) .filter-btn').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');
-  applyFilters();
-}
-function applyFilters(){
-  document.querySelectorAll('.doc-row').forEach(r=>{
-    const typeOk = aType==='all' || r.dataset.type===aType;
-    const yearOk = aYear==='all' || r.dataset.year===aYear;
-    r.style.display = typeOk && yearOk ? 'flex' : 'none';
-  });
-}
-function fSearch(q){
-  document.querySelectorAll('.doc-row').forEach(r=>{
-    r.style.display=r.querySelector('.title').textContent.toLowerCase().includes(q.toLowerCase())?'flex':'none';
-  });
-}
-
-// ── DECISIONS FILTER ──
-function fDecision(type, btn){
-  document.querySelectorAll('[onclick^="fDecision"]').forEach(b=>{b.className='btn btn-sm btn-ol';});
-  btn.className='btn btn-sm btn-dk';
-  document.querySelectorAll('.decision-row').forEach(r=>{
-    r.style.display = type==='all' || r.dataset.dtype===type ? 'flex' : 'none';
-  });
-}
-
-// ── SCHEDULE FILTER ──
-function fSchedule(type, btn){
-  document.querySelectorAll('[onclick^="fSchedule"]').forEach(b=>{b.className='btn btn-sm btn-ol';});
-  btn.className='btn btn-sm btn-dk';
-  document.querySelectorAll('#sched-table tbody tr').forEach(r=>{
-    r.style.display = type==='all' || r.dataset.stype===type ? '' : 'none';
-  });
-}
-
-// ── ACT SUMMARY ACCORDION ──
+// ── ACCORDIONS ──
 function toggleSummary(btn){
   btn.classList.toggle('open');
-  const body = btn.nextElementSibling;
-  body.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
 }
 
-// ── FAQ ACCORDION ──
-function toggleFAQ(btn){
-  // Close others in same column
-  const col = btn.closest('div[class=""]') || btn.closest('.faq-col') || btn.closest('div');
-  btn.classList.toggle('open');
-  const body = btn.nextElementSibling;
-  body.classList.toggle('open');
+// ── PDF PLACEHOLDER MODAL ──
+function openPDF(path,title){
+  document.getElementById('pdf-modal-title').textContent = title;
+  document.getElementById('pdf-modal-path').textContent = path;
+  document.getElementById('pdf-modal').classList.add('open');
 }
+function closePDF(){ document.getElementById('pdf-modal').classList.remove('open'); }
+
+// ── ACCESSIBILITY ──
+let fontPct = 100;
+function toggleA11y(){
+  const p = document.getElementById('a11y-panel');
+  p.classList.toggle('open');
+  document.getElementById('a11y-fab').setAttribute('aria-expanded', p.classList.contains('open'));
+}
+function fontStep(dir){
+  fontPct = Math.min(150, Math.max(80, fontPct + dir*10));
+  document.documentElement.style.fontSize = fontPct + '%';
+}
+function toggleKbdNav(){
+  const on = document.documentElement.classList.toggle('a11y-kbdnav');
+  const b = document.getElementById('btn-kbdnav');
+  b.setAttribute('aria-pressed', on);
+  b.textContent = on ? 'Disable' : 'Enable';
+}
+function toggleReadable(){
+  const on = document.documentElement.classList.toggle('a11y-readable');
+  const b = document.getElementById('btn-readable');
+  b.setAttribute('aria-pressed', on);
+  b.textContent = on ? 'Disable' : 'Enable';
+}
+function setTheme(theme){
+  if(theme){ document.documentElement.setAttribute('data-theme', theme); }
+  else { document.documentElement.removeAttribute('data-theme'); }
+  document.querySelectorAll('#a11y-panel [data-theme]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.theme===theme));
+}
+function resetA11y(){
+  fontPct = 100;
+  document.documentElement.style.fontSize = '100%';
+  document.documentElement.classList.remove('a11y-kbdnav','a11y-readable');
+  document.documentElement.removeAttribute('data-theme');
+  document.getElementById('btn-kbdnav').setAttribute('aria-pressed','false');
+  document.getElementById('btn-kbdnav').textContent='Enable';
+  document.getElementById('btn-readable').setAttribute('aria-pressed','false');
+  document.getElementById('btn-readable').textContent='Enable';
+  document.querySelectorAll('#a11y-panel [data-theme]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.theme===''));
+}
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape'){ closeLangModal(); closePDF(); }
+});
 </script>
 </body>
 </html>

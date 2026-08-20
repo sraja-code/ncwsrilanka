@@ -381,18 +381,15 @@ footer{background:var(--purple-lt);border-top:1px solid var(--border);padding:56
     <div class="gw-langs">
       <div class="gw-card si" onclick="chooseLang('si')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('si')">
         <div class="gw-greet">ආයුබෝවන්</div>
-        <div class="gw-sub si">සිංහලෙන් බලන්න</div>
-        <span class="btn btn-outline btn-sm">Enter in Sinhala</span>
+        <span class="btn btn-outline btn-sm">View in Sinhala</span>
       </div>
       <div class="gw-card en" onclick="chooseLang('en')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('en')">
         <div class="gw-greet">Welcome</div>
-        <div class="gw-sub">View in English</div>
-        <span class="btn btn-purple btn-sm">Enter in English</span>
+        <span class="btn btn-purple btn-sm">View in English</span>
       </div>
       <div class="gw-card ta" onclick="chooseLang('ta')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')chooseLang('ta')">
         <div class="gw-greet">வணக்கம்</div>
-        <div class="gw-sub ta">தமிழில் பார்க்கவும்</div>
-        <span class="btn btn-outline btn-sm">Enter in Tamil</span>
+        <span class="btn btn-outline btn-sm">View in Tamil</span>
       </div>
     </div>
   </div>
@@ -407,6 +404,18 @@ footer{background:var(--purple-lt);border-top:1px solid var(--border);padding:56
     <div class="lang-modal-actions">
       <button class="btn btn-outline btn-sm" onclick="closeLangModal()">Go Back</button>
       <button class="btn btn-purple btn-sm" onclick="proceedInEnglish()">Continue in English</button>
+    </div>
+  </div>
+</div>
+
+<!-- external site confirmation modal -->
+<div id="external-modal" class="lang-modal" onclick="if(event.target===this)closeExternalModal()">
+  <div class="lang-modal-box">
+    <h3>You are leaving the NCW website</h3>
+    <p id="external-modal-msg">This link opens an external site in a new tab.</p>
+    <div class="lang-modal-actions">
+      <button class="btn btn-outline btn-sm" onclick="closeExternalModal()">Cancel</button>
+      <button class="btn btn-purple btn-sm" id="external-modal-go">Continue</button>
     </div>
   </div>
 </div>
@@ -531,7 +540,7 @@ footer{background:var(--purple-lt);border-top:1px solid var(--border);padding:56
     <div class="action-bar">
       <div class="container action-bar-inner">
         <button class="pill-btn" onclick="go('contact-head')">Make a Complaint</button>
-        <a class="pill-btn alt" href="https://hurin.hrcsl.lk/track_my_case" target="_blank" rel="noopener noreferrer">Progress of Complaints</a>
+        <button class="pill-btn alt" onclick="openExternal('https://hurin.hrcsl.lk/track_my_case','This opens the HURIN complaint tracking system (hurin.hrcsl.lk) in a new tab.')">Progress of Complaints</button>
         <button class="pill-btn alt" onclick="goStub('Daily Inquiry Schedule')">Daily Inquiry Schedule</button>
       </div>
     </div>
@@ -599,7 +608,7 @@ footer{background:var(--purple-lt);border-top:1px solid var(--border);padding:56
     <div class="action-bar">
       <div class="container action-bar-inner">
         <button class="pill-btn" onclick="go('contact-head')">Make a Complaint</button>
-        <a class="pill-btn alt" href="https://hurin.hrcsl.lk/track_my_case" target="_blank" rel="noopener noreferrer">Progress of Complaints</a>
+        <button class="pill-btn alt" onclick="openExternal('https://hurin.hrcsl.lk/track_my_case','This opens the HURIN complaint tracking system (hurin.hrcsl.lk) in a new tab.')">Progress of Complaints</button>
         <button class="pill-btn alt" onclick="goStub('Daily Inquiry Schedule')">Daily Inquiry Schedule</button>
       </div>
     </div>
@@ -931,6 +940,17 @@ function chooseLang(lang){
 }
 function closeLangModal(){ document.getElementById('lang-modal').classList.remove('open'); pendingLang=null; }
 function proceedInEnglish(){ document.getElementById('lang-modal').classList.remove('open'); enterSite('en'); }
+
+// ── EXTERNAL LINK CONFIRMATION ──
+function openExternal(url, message){
+  document.getElementById('external-modal-msg').textContent = message || 'This link opens an external site in a new tab.';
+  document.getElementById('external-modal-go').onclick = function(){
+    window.open(url, '_blank', 'noopener,noreferrer');
+    closeExternalModal();
+  };
+  document.getElementById('external-modal').classList.add('open');
+}
+function closeExternalModal(){ document.getElementById('external-modal').classList.remove('open'); }
 function enterSite(lang){
   document.getElementById('page-gateway').classList.remove('active');
   document.getElementById('page-site').classList.add('active');
@@ -1048,7 +1068,7 @@ function resetA11y(){
   document.querySelectorAll('#a11y-panel [data-theme]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.theme===''));
 }
 document.addEventListener('keydown', function(e){
-  if(e.key==='Escape'){ closeLangModal(); closePDF(); }
+  if(e.key==='Escape'){ closeLangModal(); closePDF(); closeExternalModal(); }
 });
 </script>
 </body>
